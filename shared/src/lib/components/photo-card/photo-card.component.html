@@ -1,0 +1,22 @@
+<mat-card
+  *ngIf="showCard"
+  class="photoCard"
+  (click)="openCollection(photoCard.collectionId)"
+>
+  <div *ngIf="loading" class="photoCard__skeleton">
+    <div class="photoCard__skeletonMask"></div>
+  </div>
+  <img
+    mat-card-image
+    [src]="photoCard.thumbnailUrl"
+    [alt]="photoCard.thumbnailAltText"
+    [hidden]="loading"
+    (load)="onLoad()"
+  />
+  <div class="photoCard__overlay" *ngIf="!loading && photoCard.title">
+    <h2 class="photoCard__title">{{ photoCard.title }}</h2>
+    <p *ngIf="photoCard.description" class="photoCard__description">
+      {{ photoCard.description }}
+    </p>
+  </div>
+</mat-card>

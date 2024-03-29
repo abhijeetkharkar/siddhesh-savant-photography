@@ -1,0 +1,20 @@
+<ng-container *ngIf="showHeader$ | async">
+  <mat-toolbar>
+    <mat-toolbar-row class="header">
+      <a routerLink="home" class="header__title">
+        <span class="mb-0">SIDDHESH SAVANT PHOTOGRAPHY</span>
+      </a>
+      <div class="header__navigation">
+        <a mat-button routerLink="home"
+          ><span class="mat-headline-6">Home</span></a
+        >
+        <a mat-button routerLink="about"
+          ><span class="mat-headline-6">About</span></a
+        >
+        <a mat-button routerLink="contact-us"
+          ><span class="mat-headline-6">Contact Us</span></a
+        >
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</ng-container>

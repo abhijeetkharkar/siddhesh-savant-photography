@@ -1,0 +1,66 @@
+@use '../../../../../src/styles/tools/mixins';
+@use '../../../../../src/styles/base/breakpoints';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1rem;
+
+  @include mixins.BreakAt(breakpoints.$breakpoint-5) {
+    padding: 2rem;
+  }
+}
+
+.collectionTitle {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+
+  .photoTitle {
+    margin: 0;
+  }
+}
+
+.photo {
+  max-height: 78vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  & img {
+    object-fit: contain;
+    max-width: 35rem;
+
+    @include mixins.BreakAt(breakpoints.$breakpoint-5) {
+      max-width: 64rem;
+    }
+
+    @include mixins.BreakAt(breakpoints.$breakpoint-8) {
+      max-width: 86rem;
+    }
+  }
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+
+  .toolbar__previous mat-icon {
+    transform: scale(1.5);
+  }
+
+  .toolbar__next mat-icon {
+    transform: scale(1.5);
+  }
+}

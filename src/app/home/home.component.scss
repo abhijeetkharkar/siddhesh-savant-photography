@@ -1,0 +1,11 @@
+@use '../../styles/tools/mixins';
+
+:host {
+  margin: 2rem;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}

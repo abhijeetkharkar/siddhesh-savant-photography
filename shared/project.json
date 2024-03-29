@@ -1,0 +1,9 @@
+{
+  "name": "shared",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "shared/src",
+  "prefix": "siddhesh-savant-photography",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}

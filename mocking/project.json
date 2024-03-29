@@ -1,0 +1,19 @@
+{
+  "name": "mocking",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "mocking/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/mocking",
+        "main": "mocking/src/index.ts",
+        "tsConfig": "mocking/tsconfig.lib.json",
+        "assets": ["mocking/*.md"]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,27 @@
+@use 'sass:map';
+@use '../base/breakpoints' as *;
+
+$breakpoints: (
+  'xx-small': $breakpoint-xxs,
+  'x-small': $breakpoint-xs,
+  'small': $breakpoint-s,
+  'medium': $breakpoint-m,
+  'large': $breakpoint-l,
+  'x-large': $breakpoint-xl,
+  'modal-small': $modal-breakpoint-s,
+  'modal-medium': $modal-breakpoint-m,
+  'landscape': landscape,
+);
+
+@mixin BreakAt($breakpoint, $type: min-width) {
+  @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+    $breakpoint-value: map.get($breakpoints, $breakpoint);
+    @media all and ($type: $breakpoint-value) {
+      @content;
+    }
+  } @else {
+    @media all and ($type: $breakpoint) {
+      @content;
+    }
+  }
+}

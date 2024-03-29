@@ -1,0 +1,39 @@
+<ng-container *ngIf="showCarousel">
+  <div *ngIf="filteredPhotos[currentIndex].title && filteredPhotos[currentIndex].description" class="header">
+    <h3 class="photoTitle">{{ filteredPhotos[currentIndex].title }}</h3>
+    <mat-icon
+      #tooltip="matTooltip"
+      [matTooltip]="filteredPhotos[currentIndex].description"
+      [matTooltipPosition]="'below'"
+      matTooltipHideDelay="0"
+      >info</mat-icon
+    >
+  </div>
+  <div class="photo">
+    <img
+      [src]="filteredPhotos[currentIndex].url"
+      [alt]="filteredPhotos[currentIndex].altText"
+    />
+  </div>
+  <div class="toolbar">
+    <button
+      mat-icon-button
+      class="toolbar__previous"
+      [class.hide]="!enablePrevious"
+      (click)="goToPrevious()"
+    >
+      <mat-icon [fontIcon]="previousIcon" />
+    </button>
+    <p class="mat-headline-6 mb-0 mt-0">
+      {{ currentIndex + 1 + ' / ' + totalLength }}
+    </p>
+    <button
+      mat-icon-button
+      class="toolbar__next"
+      [class.hide]="!enableNext"
+      (click)="goToNext()"
+    >
+      <mat-icon [fontIcon]="nextIcon" />
+    </button>
+  </div>
+</ng-container>

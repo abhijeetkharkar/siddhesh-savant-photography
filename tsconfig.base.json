@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@siddhesh-savant-photography/mocking": ["mocking/src/index.ts"],
+      "@siddhesh-savant-photography/models": ["models/src/index.ts"],
+      "@siddhesh-savant-photography/shared": ["shared/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

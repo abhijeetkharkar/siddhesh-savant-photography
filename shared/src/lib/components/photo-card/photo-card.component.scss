@@ -1,0 +1,81 @@
+@use '../../../../../src/styles/tools/mixins';
+@use '../../../../../src/styles/base/breakpoints';
+
+.photoCard {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+  position: relative;
+
+  @include mixins.BreakAt(breakpoints.$breakpoint-5) {
+    max-width: 25rem;
+  }
+
+  @include mixins.BreakAt(breakpoints.$breakpoint-8) {
+    max-width: 30rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .photoCard__skeleton {
+    width: 20rem;
+    height: 60vh;
+    background-color: #f6f6f6;
+    background: linear-gradient(to right, #f6f6f6 8%, #d9d9d9 18%, #f6f6f6 33%);
+    background-size: breakpoints.$breakpoint-4 80vh;
+    position: relative;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+
+    @include mixins.BreakAt(breakpoints.$breakpoint-5) {
+      width: 25rem;
+      height: 70vh;
+      background-size: breakpoints.$breakpoint-7 70vh;
+    }
+
+    @include mixins.BreakAt(breakpoints.$breakpoint-8) {
+      width: 30rem;
+      height: 80vh;
+      background-size: breakpoints.$breakpoint-10 60vh;
+    }
+  }
+
+  .photoCard__skeletonMask {
+    background-color: #fff;
+    position: absolute;
+  }
+
+  .photoCard__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+    &:hover {
+      opacity: 0.8;
+      transition: opacity 0.3s ease-in;
+    }
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: 800px 0;
+  }
+}
