@@ -1,0 +1,23 @@
+@use '../../styles/tools/mixins';
+@use '../../styles/base/breakpoints';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.collectionHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem 2rem 0;
+  align-items: center;
+
+  .collectionHeader__back {
+    justify-self: left;
+  }
+
+  .collectionHeader__title {
+    justify-self: center;
+  }
+}

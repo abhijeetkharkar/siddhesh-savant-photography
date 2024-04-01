@@ -1,5 +1,11 @@
 <ng-container *ngIf="showCarousel">
-  <div *ngIf="filteredPhotos[currentIndex].title && filteredPhotos[currentIndex].description" class="header">
+  <div
+    *ngIf="
+      filteredPhotos[currentIndex].title &&
+      filteredPhotos[currentIndex].description
+    "
+    class="header"
+  >
     <h3 class="photoTitle">{{ filteredPhotos[currentIndex].title }}</h3>
     <mat-icon
       #tooltip="matTooltip"
@@ -15,25 +21,46 @@
       [alt]="filteredPhotos[currentIndex].altText"
     />
   </div>
-  <div class="toolbar">
-    <button
-      mat-icon-button
-      class="toolbar__previous"
-      [class.hide]="!enablePrevious"
-      (click)="goToPrevious()"
+
+  <div class="collectionNavigation">
+    <a
+      mat-button
+      [class.display--none]="!previousCollection"
+      [disabled]="!previousCollection"
+      [href]="'/photo-collection/' + previousCollection?.collectionId"
+      title="Previous Collection"
+      ><mat-icon *ngIf="previousCollection">navigate_before</mat-icon
+      >{{ previousCollection?.title }}</a
     >
-      <mat-icon [fontIcon]="previousIcon" />
-    </button>
-    <p class="mat-headline-6 mb-0 mt-0">
-      {{ currentIndex + 1 + ' / ' + totalLength }}
-    </p>
-    <button
-      mat-icon-button
-      class="toolbar__next"
-      [class.hide]="!enableNext"
-      (click)="goToNext()"
+    <div class="toolbar">
+      <button
+        mat-icon-button
+        class="toolbar__previous"
+        [class.hide]="!enablePrevious"
+        (click)="goToPrevious()"
+      >
+        <mat-icon [fontIcon]="previousIcon" />
+      </button>
+      <p class="mat-headline-6 mb-0 mt-0">
+        {{ currentIndex + 1 + ' / ' + totalLength }}
+      </p>
+      <button
+        mat-icon-button
+        class="toolbar__next"
+        [class.hide]="!enableNext"
+        (click)="goToNext()"
+      >
+        <mat-icon [fontIcon]="nextIcon" />
+      </button>
+    </div>
+    <a
+      mat-button
+      [class.display--none]="!nextCollection"
+      [disabled]="!nextCollection"
+      [href]="'/photo-collection/' + nextCollection?.collectionId"
+      title="Next Collection"
+      ><mat-icon *ngIf="nextCollection" iconPositionEnd>navigate_next</mat-icon
+      >{{ nextCollection?.title }}</a
     >
-      <mat-icon [fontIcon]="nextIcon" />
-    </button>
   </div>
 </ng-container>

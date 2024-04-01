@@ -1,8 +1,4 @@
-import {
-  CarouselControlPosition,
-  CarouselType,
-  PaginationType,
-} from './enums';
+import { CarouselControlPosition, CarouselType, PaginationType } from './enums';
 
 export interface IPhotoCard {
   collectionId: string;
@@ -16,6 +12,11 @@ export interface IPhotoCollection extends IPhotoCard {
   photos: IPhoto[];
 }
 
+export interface IPhotoCollectionItems extends IPhotoCollection {
+  previous?: Pick<IPhotoCard, 'collectionId' | 'title'>;
+  next?: Pick<IPhotoCard, 'collectionId' | 'title'>;
+}
+
 export interface IPhotoCarousel {
   photos?: IPhoto[];
   type: CarouselType;
@@ -25,6 +26,8 @@ export interface IPhotoCarousel {
   nextButton: ICarouselControl;
   carouselControlsPosition: CarouselControlPosition;
   title?: string;
+  previousCollection?: Pick<IPhotoCard, 'collectionId' | 'title'>;
+  nextCollection?: Pick<IPhotoCard, 'collectionId' | 'title'>;
 }
 
 export interface IPhoto {

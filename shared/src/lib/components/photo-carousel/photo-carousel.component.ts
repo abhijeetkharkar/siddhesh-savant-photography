@@ -12,6 +12,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import {
   CarouselType,
   IPhoto,
+  IPhotoCard,
   IPhotoCarousel,
   URL_REGEX,
 } from '@siddhesh-savant-photography/models';
@@ -33,6 +34,10 @@ export class PhotoCarouselComponent implements OnInit, OnDestroy {
   public enableNext = false;
   public previousIcon = 'arrow_circle_left';
   public nextIcon = 'arrow_circle_right';
+  public previousCollection:
+    | Pick<IPhotoCard, 'collectionId' | 'title'>
+    | undefined;
+  public nextCollection: Pick<IPhotoCard, 'collectionId' | 'title'> | undefined;
   private carouselIntervalId!: ReturnType<typeof setInterval>;
 
   ngOnInit(): void {
@@ -56,6 +61,8 @@ export class PhotoCarouselComponent implements OnInit, OnDestroy {
         this.photoCarousel.timerInterval
       );
     }
+    this.previousCollection = this.photoCarousel?.previousCollection;
+    this.nextCollection = this.photoCarousel?.nextCollection;
   }
 
   ngOnDestroy(): void {
