@@ -2,6 +2,7 @@ import {
   Component,
   HostListener,
   Input,
+  OnChanges,
   OnDestroy,
   OnInit,
 } from '@angular/core';
@@ -16,16 +17,24 @@ import {
   IPhotoCarousel,
   URL_REGEX,
 } from '@siddhesh-savant-photography/models';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'lib-photo-carousel',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule, MatTooltipModule],
+  imports: [
+    CommonModule,
+    MatButtonModule,
+    MatIconModule,
+    MatTooltipModule,
+    RouterLink,
+    RouterLinkActive,
+  ],
   templateUrl: './photo-carousel.component.html',
   styleUrl: './photo-carousel.component.scss',
 })
-export class PhotoCarouselComponent implements OnInit, OnDestroy {
-  @Input() photoCarousel!: IPhotoCarousel;
+export class PhotoCarouselComponent implements OnChanges, OnDestroy {
+  @Input() photoCarousel!: IPhotoCarousel | null;
   public showCarousel = false;
   public filteredPhotos: IPhoto[] = [];
   public currentIndex = 0;
@@ -40,21 +49,22 @@ export class PhotoCarouselComponent implements OnInit, OnDestroy {
   public nextCollection: Pick<IPhotoCard, 'collectionId' | 'title'> | undefined;
   private carouselIntervalId!: ReturnType<typeof setInterval>;
 
-  ngOnInit(): void {
+  ngOnChanges(): void {
+    this.currentIndex = 0;
     this.showCarousel = this.isInputValid();
-    this.enablePrevious = this.photoCarousel.type === CarouselType.LOOP;
+    this.enablePrevious = this.photoCarousel?.type === CarouselType.LOOP;
     this.enableNext =
-      this.photoCarousel.type === CarouselType.NORMAL ||
-      this.photoCarousel.type === CarouselType.LOOP;
-    if (this.photoCarousel.previousButton.icon) {
+      this.photoCarousel?.type === CarouselType.NORMAL ||
+      this.photoCarousel?.type === CarouselType.LOOP;
+    if (this.photoCarousel?.previousButton.icon) {
       this.previousIcon = this.photoCarousel.previousButton.icon;
     }
-    if (this.photoCarousel.nextButton.icon) {
+    if (this.photoCarousel?.nextButton.icon) {
       this.nextIcon = this.photoCarousel.nextButton.icon;
     }
     if (
       this.showCarousel &&
-      this.photoCarousel.type === CarouselType.AUTOMATIC
+      this.photoCarousel?.type === CarouselType.AUTOMATIC
     ) {
       this.carouselIntervalId = setInterval(
         () => this.goToNextLoop(),
@@ -82,7 +92,7 @@ export class PhotoCarouselComponent implements OnInit, OnDestroy {
   }
 
   public goToPrevious() {
-    switch (this.photoCarousel.type) {
+    switch (this.photoCarousel?.type) {
       case CarouselType.NORMAL:
         this.goToPreviousNormal();
         break;
@@ -95,7 +105,7 @@ export class PhotoCarouselComponent implements OnInit, OnDestroy {
   }
 
   public goToNext() {
-    switch (this.photoCarousel.type) {
+    switch (this.photoCarousel?.type) {
       case CarouselType.NORMAL:
         this.goToNextNormal();
         break;

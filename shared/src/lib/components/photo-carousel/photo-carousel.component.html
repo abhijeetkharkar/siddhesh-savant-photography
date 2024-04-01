@@ -27,7 +27,7 @@
       mat-button
       [class.display--none]="!previousCollection"
       [disabled]="!previousCollection"
-      [href]="'/photo-collection/' + previousCollection?.collectionId"
+      [routerLink]="'/photo-collection/' + previousCollection?.collectionId"
       title="Previous Collection"
       ><mat-icon *ngIf="previousCollection">navigate_before</mat-icon
       >{{ previousCollection?.title }}</a
@@ -57,7 +57,7 @@
       mat-button
       [class.display--none]="!nextCollection"
       [disabled]="!nextCollection"
-      [href]="'/photo-collection/' + nextCollection?.collectionId"
+      [routerLink]="'/photo-collection/' + nextCollection?.collectionId"
       title="Next Collection"
       ><mat-icon *ngIf="nextCollection" iconPositionEnd>navigate_next</mat-icon
       >{{ nextCollection?.title }}</a

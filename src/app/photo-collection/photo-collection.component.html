@@ -1,7 +1,9 @@
-<div class="collectionHeader">
-  <a mat-button class="collectionHeader__back" routerLink="/home"
-    ><mat-icon>arrow_back</mat-icon>Back</a
-  >
-  <h3 class="collectionHeader__title">{{ photoCarousel.title }}</h3>
-</div>
-<lib-photo-carousel [photoCarousel]="photoCarousel"></lib-photo-carousel>
+<ng-container *ngIf="photoCarousel$ | async as photoCarousel">
+  <div class="collectionHeader">
+    <a mat-button class="collectionHeader__back" routerLink="/home"
+      ><mat-icon>arrow_back</mat-icon>Back</a
+    >
+    <h3 class="collectionHeader__title">{{ photoCarousel.title }}</h3>
+  </div>
+  <lib-photo-carousel [photoCarousel]="photoCarousel"></lib-photo-carousel>
+</ng-container>
