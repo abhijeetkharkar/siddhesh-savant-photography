@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PhotoCardComponent } from '@siddhesh-savant-photography/shared';
 import { HomeService } from './services/home.service';
-import { IPhotoCard } from '@siddhesh-savant-photography/models';
+import { Breakpoint, IPhotoCard } from '@siddhesh-savant-photography/models';
 
 @Component({
   selector: 'siddhesh-savant-photography-home',
@@ -12,11 +12,35 @@ import { IPhotoCard } from '@siddhesh-savant-photography/models';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
-  public photoCards!: IPhotoCard[];
+  public photoCardColumns!: IPhotoCard[][];
+  private totalChunks: number = 1;
 
   constructor(private readonly homeService: HomeService) {}
 
   ngOnInit(): void {
-    this.photoCards = this.homeService.getPhotoCards();
+    this.onResize(window.innerWidth);
+    this.photoCardColumns = this.homeService.getPhotoCardColumns(this.totalChunks).map((column) =>
+      column.map((photo, i) => {
+        if (i === 0) {
+          return {
+            ...photo,
+            eager: true,
+          };
+        } else {
+          return photo;
+        }
+      })
+    );
+  }
+
+  @HostListener('window:resize', ['$event.target.innerWidth'])
+  onResize(width: number) {
+    if (width < Breakpoint.BREAKPOINT_5) {
+      this.totalChunks = 1;
+    } else if (width < Breakpoint.BREAKPOINT_8) {
+      this.totalChunks = 2;
+    } else {
+      this.totalChunks = 3;
+    }
   }
 }

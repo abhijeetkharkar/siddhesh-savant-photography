@@ -15,6 +15,7 @@ import {
   IPhoto,
   IPhotoCard,
   IPhotoCarousel,
+  IPhotoCollectionCard,
   URL_REGEX,
 } from '@siddhesh-savant-photography/models';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -44,13 +45,13 @@ export class PhotoCarouselComponent implements OnChanges, OnDestroy {
   public previousIcon = 'arrow_circle_left';
   public nextIcon = 'arrow_circle_right';
   public previousCollection:
-    | Pick<IPhotoCard, 'collectionId' | 'title'>
+    | Pick<IPhotoCollectionCard, 'collectionId' | 'title'>
     | undefined;
-  public nextCollection: Pick<IPhotoCard, 'collectionId' | 'title'> | undefined;
+  public nextCollection: Pick<IPhotoCollectionCard, 'collectionId' | 'title'> | undefined;
   private carouselIntervalId!: ReturnType<typeof setInterval>;
 
   ngOnChanges(): void {
-    this.currentIndex = 0;
+    this.currentIndex = Number(this.photoCarousel?.currentPhotoId) ?? 0;
     this.showCarousel = this.isInputValid();
     this.enablePrevious = this.photoCarousel?.type === CarouselType.LOOP;
     this.enableNext =

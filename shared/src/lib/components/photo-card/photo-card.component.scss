@@ -22,11 +22,11 @@
   }
 
   .photoCard__skeleton {
-    width: 20rem;
-    height: 60vh;
+    /* width: 20rem;
+    height: 60vh; */
     background-color: #f6f6f6;
     background: linear-gradient(to right, #f6f6f6 8%, #d9d9d9 18%, #f6f6f6 33%);
-    background-size: breakpoints.$breakpoint-4 80vh;
+    /* background-size: breakpoints.$breakpoint-4 80vh; */
     position: relative;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -35,15 +35,15 @@
     animation-timing-function: linear;
 
     @include mixins.BreakAt(breakpoints.$breakpoint-5) {
-      width: 25rem;
+      /* width: 25rem;
       height: 70vh;
-      background-size: breakpoints.$breakpoint-7 70vh;
+      background-size: breakpoints.$breakpoint-7 70vh; */
     }
 
     @include mixins.BreakAt(breakpoints.$breakpoint-8) {
-      width: 30rem;
+      /* width: 30rem;
       height: 80vh;
-      background-size: breakpoints.$breakpoint-10 60vh;
+      background-size: breakpoints.$breakpoint-10 60vh; */
     }
   }
 

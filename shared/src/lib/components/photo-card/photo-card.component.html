@@ -1,17 +1,19 @@
 <mat-card
   *ngIf="showCard"
   class="photoCard"
-  (click)="openCollection(photoCard.collectionId)"
+  (click)="openPhotos(photoCard.photoId)"
 >
-  <div *ngIf="loading" class="photoCard__skeleton">
+  <div *ngIf="loading" class="photoCard__skeleton" [ngStyle]="{'width': width, 'height': height, 'background-size': backgroundWidth + ' ' + backgroundHeight}">
     <div class="photoCard__skeletonMask"></div>
   </div>
   <img
     mat-card-image
-    [src]="photoCard.thumbnailUrl"
+    [ngSrc]="photoCard.thumbnailUrl"
     [alt]="photoCard.thumbnailAltText"
-    [hidden]="loading"
+    [width]="width"
+    [height]="height"
     (load)="onLoad()"
+    [priority]="photoCard.eager"
   />
   <div class="photoCard__overlay" *ngIf="!loading && photoCard.title">
     <h2 class="photoCard__title">{{ photoCard.title }}</h2>

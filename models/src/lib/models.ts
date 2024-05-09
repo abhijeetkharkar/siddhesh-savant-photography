@@ -1,23 +1,31 @@
 import { CarouselControlPosition, CarouselType, PaginationType } from './enums';
 
 export interface IPhotoCard {
-  collectionId: string;
+  photoId: string;
   thumbnailUrl: string;
   thumbnailAltText: string;
   title?: string;
   description?: string;
+  eager?: boolean;
+  width?: number;
+  height?: number;
 }
 
-export interface IPhotoCollection extends IPhotoCard {
+export interface IPhotoCollectionCard extends Omit<IPhotoCard, 'photoId'> {
+  collectionId: string;
+}
+
+export interface IPhotoCollection extends IPhotoCollectionCard {
   photos: IPhoto[];
 }
 
 export interface IPhotoCollectionItems extends IPhotoCollection {
-  previous?: Pick<IPhotoCard, 'collectionId' | 'title'>;
-  next?: Pick<IPhotoCard, 'collectionId' | 'title'>;
+  previous?: Pick<IPhotoCollectionCard, 'collectionId' | 'title'>;
+  next?: Pick<IPhotoCollectionCard, 'collectionId' | 'title'>;
 }
 
 export interface IPhotoCarousel {
+  currentPhotoId?: string;
   photos?: IPhoto[];
   type: CarouselType;
   timerInterval?: number;
@@ -26,15 +34,18 @@ export interface IPhotoCarousel {
   nextButton: ICarouselControl;
   carouselControlsPosition: CarouselControlPosition;
   title?: string;
-  previousCollection?: Pick<IPhotoCard, 'collectionId' | 'title'>;
-  nextCollection?: Pick<IPhotoCard, 'collectionId' | 'title'>;
+  previousCollection?: Pick<IPhotoCollectionCard, 'collectionId' | 'title'>;
+  nextCollection?: Pick<IPhotoCollectionCard, 'collectionId' | 'title'>;
 }
 
 export interface IPhoto {
+  id: string;
   title: string;
   description: string;
   url: string;
   altText: string;
+  width?: number;
+  height?: number;
 }
 
 export interface ICarouselControl {
