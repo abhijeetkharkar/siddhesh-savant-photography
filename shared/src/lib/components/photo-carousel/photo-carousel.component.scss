@@ -46,6 +46,10 @@
     @include mixins.BreakAt(breakpoints.$breakpoint-8) {
       max-width: 86rem;
     }
+
+    @include mixins.BreakAt(breakpoints.$breakpoint-11) {
+      max-width: 135rem;
+    }
   }
 }
 

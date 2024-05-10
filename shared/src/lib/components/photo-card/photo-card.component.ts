@@ -4,6 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { Breakpoint, IPhotoCard, ScreenSize } from '@siddhesh-savant-photography/models';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
+export const IMG_WIDTH_LARGE_DESKTOP = 480;
 export const IMG_WIDTH_DESKTOP = 480;
 export const IMG_WIDTH_TAB = 400;
 export const IMG_WIDTH_MOBILE = 320;
@@ -39,9 +40,12 @@ export class PhotoCardComponent implements OnInit {
     } else if (width < Breakpoint.BREAKPOINT_8) {
       this.width = IMG_WIDTH_TAB;
       this.backgroundWidth = Breakpoint.BREAKPOINT_7;
-    } else {
+    } else if (width < Breakpoint.BREAKPOINT_11){
       this.width = IMG_WIDTH_DESKTOP;
-      this.backgroundWidth = Breakpoint.BREAKPOINT_10;
+      this.backgroundWidth = Breakpoint.BREAKPOINT_9;
+    } else {
+      this.width = IMG_WIDTH_LARGE_DESKTOP;
+      this.backgroundWidth = Breakpoint.BREAKPOINT_12;
     }
     this.height = (this.photoCard?.height ?? 0) * this.width / (this.photoCard?.width ?? 0);
     this.backgroundHeight = this.height;

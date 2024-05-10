@@ -39,8 +39,10 @@ export class HomeComponent implements OnInit {
       this.totalChunks = 1;
     } else if (width < Breakpoint.BREAKPOINT_8) {
       this.totalChunks = 2;
-    } else {
+    } else if (width < Breakpoint.BREAKPOINT_11) {
       this.totalChunks = 3;
+    } else {
+      this.totalChunks = 4;
     }
   }
 }

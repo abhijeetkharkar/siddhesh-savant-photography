@@ -27,6 +27,8 @@ export enum Breakpoint {
   BREAKPOINT_8 = 80 * 16,
   BREAKPOINT_9 = 90 * 16,
   BREAKPOINT_10 = 120 * 16,
+  BREAKPOINT_11 = 135 * 16,
+  BREAKPOINT_12 = 150 * 16,
 }
 
 export enum ScreenSize {
