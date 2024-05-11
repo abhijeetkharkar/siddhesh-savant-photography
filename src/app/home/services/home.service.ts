@@ -63,6 +63,7 @@ export class HomeService {
     const chunks = Array(totalChunks);
     const chunkSizes = Array(totalChunks).fill(0);
     for (const item of data) {
+      const scaledHeight = 400 * (item.height ?? 0) / (item.width ?? 1);
       const smallestHeightChunkIndex = chunkSizes.indexOf(
         Math.min(...chunkSizes)
       );
@@ -70,7 +71,7 @@ export class HomeService {
         chunks[smallestHeightChunkIndex] = [];
       }
       chunks[smallestHeightChunkIndex].push(item);
-      chunkSizes[smallestHeightChunkIndex] += item.height;
+      chunkSizes[smallestHeightChunkIndex] += scaledHeight;
     }
     return chunks;
   }
