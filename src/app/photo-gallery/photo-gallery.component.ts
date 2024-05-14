@@ -19,6 +19,7 @@ import {
 import { EMPTY, Observable, catchError, map, of } from 'rxjs';
 import { HeaderService } from '../header/services/header.service';
 import { HomeService } from '../home/services/home.service';
+import { FooterService } from '../footer/services/footer.service';
 
 @Component({
   selector: 'app-photo-gallery',
@@ -41,12 +42,14 @@ export class PhotoGalleryComponent implements OnInit, OnDestroy {
   constructor(
     private readonly activatedRoute: ActivatedRoute,
     private readonly headerService: HeaderService,
+    private readonly footerService: FooterService,
     private readonly homeService: HomeService,
     private readonly router: Router
   ) {}
 
   ngOnInit(): void {
     this.headerService.setShowHeader(false);
+    this.footerService.setShowFooter(false);
     this.photoCarousel$ = this.activatedRoute.params.pipe(
       map((params) => {
         const photoId: string = params['id'];

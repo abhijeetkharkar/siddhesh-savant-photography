@@ -1,4 +1,5 @@
-<!-- <div class="footerTop">
+<div class="footer" *ngIf="showFooter$ | async">
+  <!-- <div class="footer__top">
   <div>
     <h3 class="mt-0 mb-3">BIO</h3>
     <p class="mt-0 mb-0">Some bio</p>
@@ -24,4 +25,7 @@
     </div>
   </div>
 </div> -->
-<small class="footerBottom">&copy; Copyright 2024, Siddhesh Savant Photography</small>
+  <small class="footer__bottom"
+    >&copy; Copyright 2024, Siddhesh Savant Photography</small
+  >
+</div>
