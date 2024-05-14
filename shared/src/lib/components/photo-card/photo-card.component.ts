@@ -1,10 +1,10 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
-import { Breakpoint, IPhotoCard, ScreenSize } from '@siddhesh-savant-photography/models';
+import { Breakpoint, IPhotoCard } from '@siddhesh-savant-photography/models';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
-export const IMG_WIDTH_LARGE_DESKTOP = 480;
+export const IMG_WIDTH_LARGE_DESKTOP = 560;
 export const IMG_WIDTH_DESKTOP = 480;
 export const IMG_WIDTH_TAB = 400;
 export const IMG_WIDTH_MOBILE = 320;
@@ -12,12 +12,22 @@ export const IMG_WIDTH_MOBILE = 320;
 @Component({
   selector: 'lib-photo-card',
   standalone: true,
-  imports: [CommonModule, MatCardModule, RouterLink, RouterLinkActive, NgOptimizedImage],
+  imports: [
+    CommonModule,
+    MatCardModule,
+    RouterLink,
+    RouterLinkActive,
+    NgOptimizedImage,
+  ],
   templateUrl: './photo-card.component.html',
   styleUrl: './photo-card.component.scss',
 })
 export class PhotoCardComponent implements OnInit {
   @Input() photoCard!: IPhotoCard;
+  @Input() totalColumns = 0;
+  private readonly TOTAL_HORIZONTAL_MARGIN = 64;
+  private readonly ROW_GAP = 16;
+  private readonly EXTRA_REDUCTION_FACTOR = 0.014;
   public showCard = false;
   public loading = true;
   public width = 0;
@@ -33,21 +43,25 @@ export class PhotoCardComponent implements OnInit {
   }
 
   @HostListener('window:resize', ['$event.target.innerWidth'])
-  onResize(width: number) {
-    if (width < Breakpoint.BREAKPOINT_5) {
-      this.width = IMG_WIDTH_MOBILE;
+  onResize(screenWidth: number) {
+    if (screenWidth < Breakpoint.BREAKPOINT_5) {
       this.backgroundWidth = Breakpoint.BREAKPOINT_4;
-    } else if (width < Breakpoint.BREAKPOINT_8) {
-      this.width = IMG_WIDTH_TAB;
+    } else if (screenWidth < Breakpoint.BREAKPOINT_8) {
       this.backgroundWidth = Breakpoint.BREAKPOINT_7;
-    } else if (width < Breakpoint.BREAKPOINT_11){
-      this.width = IMG_WIDTH_DESKTOP;
+    } else if (screenWidth < Breakpoint.BREAKPOINT_11) {
       this.backgroundWidth = Breakpoint.BREAKPOINT_9;
     } else {
-      this.width = IMG_WIDTH_LARGE_DESKTOP;
       this.backgroundWidth = Breakpoint.BREAKPOINT_12;
     }
-    this.height = (this.photoCard?.height ?? 0) * this.width / (this.photoCard?.width ?? 0);
+    this.width =
+      (screenWidth -
+        this.TOTAL_HORIZONTAL_MARGIN -
+        (this.totalColumns - 1) * this.ROW_GAP -
+        this.EXTRA_REDUCTION_FACTOR * screenWidth) /
+      this.totalColumns;
+    this.height =
+      ((this.photoCard?.height ?? 0) * this.width) /
+      (this.photoCard?.width ?? 0);
     this.backgroundHeight = this.height;
   }
 

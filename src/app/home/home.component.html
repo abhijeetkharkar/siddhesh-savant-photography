@@ -1,3 +1,3 @@
 <div *ngFor="let photoCardColumn of photoCardColumns" class="photoCardColumn">
-  <lib-photo-card *ngFor="let photoCard of photoCardColumn" [photoCard]="photoCard"></lib-photo-card>
+  <lib-photo-card *ngFor="let photoCard of photoCardColumn" [photoCard]="photoCard" [totalColumns]="totalChunks"></lib-photo-card>
 </div>

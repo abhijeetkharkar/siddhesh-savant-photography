@@ -5,7 +5,7 @@ import { HomeService } from './services/home.service';
 import { Breakpoint, IPhotoCard } from '@siddhesh-savant-photography/models';
 
 @Component({
-  selector: 'siddhesh-savant-photography-home',
+  selector: 'app-home',
   standalone: true,
   imports: [CommonModule, PhotoCardComponent],
   templateUrl: './home.component.html',
@@ -13,7 +13,7 @@ import { Breakpoint, IPhotoCard } from '@siddhesh-savant-photography/models';
 })
 export class HomeComponent implements OnInit {
   public photoCardColumns!: IPhotoCard[][];
-  private totalChunks: number = 1;
+  public totalChunks: number = 1;
 
   constructor(private readonly homeService: HomeService) {}
 
