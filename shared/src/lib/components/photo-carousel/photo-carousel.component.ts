@@ -47,12 +47,17 @@ export class PhotoCarouselComponent implements OnChanges, OnDestroy {
   public previousCollection:
     | Pick<IPhotoCollectionCard, 'collectionId' | 'title'>
     | undefined;
-  public nextCollection: Pick<IPhotoCollectionCard, 'collectionId' | 'title'> | undefined;
+  public nextCollection:
+    | Pick<IPhotoCollectionCard, 'collectionId' | 'title'>
+    | undefined;
   private carouselIntervalId!: ReturnType<typeof setInterval>;
 
   ngOnChanges(): void {
-    this.currentIndex = Number(this.photoCarousel?.currentPhotoId) ?? 0;
     this.showCarousel = this.isInputValid();
+    this.currentIndex =
+      this.filteredPhotos.findIndex(
+        (photo) => photo.id === this.photoCarousel?.currentPhotoId
+      ) ?? 0;
     this.enablePrevious = this.photoCarousel?.type === CarouselType.LOOP;
     this.enableNext =
       this.photoCarousel?.type === CarouselType.NORMAL ||

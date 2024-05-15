@@ -21,7 +21,7 @@ import {
   IPhoto,
   ToggleableComponent,
 } from '@siddhesh-savant-photography/models';
-import { EMPTY, Observable, catchError, map } from 'rxjs';
+import { EMPTY, Observable, catchError, combineLatest, map } from 'rxjs';
 
 @Component({
   selector: 'app-photo-gallery',
@@ -40,6 +40,7 @@ import { EMPTY, Observable, catchError, map } from 'rxjs';
 export class PhotoGalleryComponent implements OnInit, OnDestroy {
   public photoCarousel$: Observable<IPhotoCarousel> =
     new Observable<IPhotoCarousel>();
+  public route = '';
 
   constructor(
     private readonly activatedRoute: ActivatedRoute,
@@ -57,10 +58,21 @@ export class PhotoGalleryComponent implements OnInit, OnDestroy {
       ToggleableComponent.FOOTER,
       false
     );
-    this.photoCarousel$ = this.activatedRoute.params.pipe(
-      map((params) => {
+    this.photoCarousel$ = combineLatest([
+      this.activatedRoute.params,
+      this.activatedRoute.queryParams,
+    ]).pipe(
+      map(([params, queryParams]) => {
         const photoId: string = params['id'];
-        const photoCards = this.photoService.getPhotoCardsV2();
+        let photoCards;
+        this.route = queryParams['route'];
+        switch (this.route) {
+          case '/mega-projects':
+            photoCards = this.photoService.getMegaProjectsPhotoCardsV2();
+            break;
+          default:
+            photoCards = this.photoService.getHomeAndSpacesPhotoCardsV2();
+        }
         if (!photoCards.find((photoCard) => photoCard.photoId === photoId)) {
           throw new Error('Invalid PhotoId');
         }

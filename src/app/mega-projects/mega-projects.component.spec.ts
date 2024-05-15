@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ContactUsComponent } from './contact-us.component';
+import { MegaProjectsComponent } from './mega-projects.component';
 
-describe('ContactUsComponent', () => {
-  let component: ContactUsComponent;
-  let fixture: ComponentFixture<ContactUsComponent>;
+describe('MegaProjectsComponent', () => {
+  let component: MegaProjectsComponent;
+  let fixture: ComponentFixture<MegaProjectsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContactUsComponent],
+      imports: [MegaProjectsComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ContactUsComponent);
+    fixture = TestBed.createComponent(MegaProjectsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-contact-us',
+  selector: 'app-connect',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './contact-us.component.html',
-  styleUrl: './contact-us.component.scss',
+  templateUrl: './connect.component.html',
+  styleUrl: './connect.component.scss',
 })
-export class ContactUsComponent {}
+export class ConnectComponent {}

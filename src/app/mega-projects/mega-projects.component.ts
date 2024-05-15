@@ -8,13 +8,13 @@ import { Breakpoint, IPhotoCard } from '@siddhesh-savant-photography/models';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-mega-projects',
   standalone: true,
   imports: [CommonModule, PhotoCardComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+  templateUrl: './mega-projects.component.html',
+  styleUrl: './mega-projects.component.scss',
 })
-export class HomeComponent implements OnInit {
+export class MegaProjectsComponent implements OnInit {
   public photoCardColumns!: IPhotoCard[][];
   public totalChunks: number = 1;
   public route = '';
@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.onResize(window.innerWidth);
-    this.photoCardColumns = this.photoService.getHomeAndSpacesPhotoCardColumns(
+    this.photoCardColumns = this.photoService.getMegaProjectsPhotoCardColumns(
       this.totalChunks
     );
     this.route = this.router.url;

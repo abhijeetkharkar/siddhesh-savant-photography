@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
-import { collections, photos } from '@siddhesh-savant-photography/mocking';
+import {
+  collections,
+  homeAndSpacesPhotos,
+  megaProjectsPhotos,
+} from '@siddhesh-savant-photography/mocking';
 import {
   IPhotoCard,
   IPhotoCollectionCard,
@@ -22,34 +26,44 @@ export class PhotoService {
     });
   }
 
-  public getPhotoCardsV2() {
-    return photos().map((photo, i) => {
+  public getHomeAndSpacesPhotoCardsV2() {
+    return homeAndSpacesPhotos().map((photo, i) => {
       return {
         collectionId: `${i}`,
         photoId: photo.id,
         thumbnailUrl: photo.url,
         thumbnailAltText: photo.altText,
-        eager: [0, 1, 2].includes(i),
         width: photo.width,
         height: photo.height,
       } as IPhotoCard;
     });
   }
 
-  public getPhotoCardColumns(totalChunks: number): IPhotoCard[][] {
-    const photoCards = photos().map((photo, i) => {
+  public getMegaProjectsPhotoCardsV2() {
+    return megaProjectsPhotos().map((photo, i) => {
       return {
         collectionId: `${i}`,
         photoId: photo.id,
         thumbnailUrl: photo.url,
         thumbnailAltText: photo.altText,
-        eager: [0, 1, 2].includes(i),
         width: photo.width,
         height: photo.height,
       } as IPhotoCard;
     });
+  }
+
+  public getHomeAndSpacesPhotoCardColumns(totalChunks: number): IPhotoCard[][] {
     const photoCardColumns = this.chunkifyWithLru(
-      photoCards,
+      this.getHomeAndSpacesPhotoCardsV2(),
+      totalChunks
+    ) as IPhotoCard[][];
+    this.prioritizeImages(photoCardColumns);
+    return photoCardColumns;
+  }
+
+  public getMegaProjectsPhotoCardColumns(totalChunks: number): IPhotoCard[][] {
+    const photoCardColumns = this.chunkifyWithLru(
+      this.getMegaProjectsPhotoCardsV2(),
       totalChunks
     ) as IPhotoCard[][];
     this.prioritizeImages(photoCardColumns);
@@ -63,7 +77,7 @@ export class PhotoService {
     const chunks = Array(totalChunks);
     const chunkSizes = Array(totalChunks).fill(0);
     for (const item of data) {
-      const scaledHeight = 400 * (item.height ?? 0) / (item.width ?? 1);
+      const scaledHeight = (400 * (item.height ?? 0)) / (item.width ?? 1);
       const smallestHeightChunkIndex = chunkSizes.indexOf(
         Math.min(...chunkSizes)
       );
@@ -76,8 +90,8 @@ export class PhotoService {
     return chunks;
   }
 
-  private prioritizeImages (photoCardColumns: IPhotoCard[][]): void {
-    for(const photoCardColumn of photoCardColumns) {
+  private prioritizeImages(photoCardColumns: IPhotoCard[][]): void {
+    for (const photoCardColumn of photoCardColumns) {
       photoCardColumn[0].eager = true;
       photoCardColumn[1].eager = true;
       photoCardColumn[2].eager = true;

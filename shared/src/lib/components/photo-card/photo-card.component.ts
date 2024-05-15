@@ -25,9 +25,10 @@ export const IMG_WIDTH_MOBILE = 320;
 export class PhotoCardComponent implements OnInit {
   @Input() photoCard!: IPhotoCard;
   @Input() totalColumns = 0;
+  @Input() route = 'home';
   private readonly TOTAL_HORIZONTAL_MARGIN = 64;
   private readonly ROW_GAP = 16;
-  private readonly EXTRA_REDUCTION_FACTOR = 0.014;
+  private readonly EXTRA_REDUCTION_FACTOR = 0.012;
   public showCard = false;
   public loading = true;
   public width = 0;
@@ -74,6 +75,6 @@ export class PhotoCardComponent implements OnInit {
   }
 
   public openPhotos(photoId: string) {
-    this.router.navigateByUrl(`/photos/${photoId}`);
+    this.router.navigate([`/photos/${photoId}`], {queryParams: {route: this.route}});
   }
 }
