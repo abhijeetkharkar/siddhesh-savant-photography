@@ -1,7 +1,9 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PhotoCardComponent } from '@siddhesh-savant-photography/shared';
-import { HomeService } from './services/home.service';
+import {
+  PhotoCardComponent,
+  PhotoService,
+} from '@siddhesh-savant-photography/shared';
 import { Breakpoint, IPhotoCard } from '@siddhesh-savant-photography/models';
 
 @Component({
@@ -15,22 +17,24 @@ export class HomeComponent implements OnInit {
   public photoCardColumns!: IPhotoCard[][];
   public totalChunks: number = 1;
 
-  constructor(private readonly homeService: HomeService) {}
+  constructor(private readonly photoService: PhotoService) {}
 
   ngOnInit(): void {
     this.onResize(window.innerWidth);
-    this.photoCardColumns = this.homeService.getPhotoCardColumns(this.totalChunks).map((column) =>
-      column.map((photo, i) => {
-        if (i === 0) {
-          return {
-            ...photo,
-            eager: true,
-          };
-        } else {
-          return photo;
-        }
-      })
-    );
+    this.photoCardColumns = this.photoService
+      .getPhotoCardColumns(this.totalChunks)
+      .map((column) =>
+        column.map((photo, i) => {
+          if (i === 0) {
+            return {
+              ...photo,
+              eager: true,
+            };
+          } else {
+            return photo;
+          }
+        })
+      );
   }
 
   @HostListener('window:resize', ['$event.target.innerWidth'])

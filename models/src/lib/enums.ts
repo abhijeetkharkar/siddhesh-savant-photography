@@ -36,3 +36,8 @@ export enum ScreenSize {
   TAB,
   DESKTOP,
 }
+
+export enum ToggleableComponent {
+  HEADER,
+  FOOTER,
+}

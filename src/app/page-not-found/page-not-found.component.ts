@@ -2,7 +2,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
-import { HeaderService } from '../header/services/header.service';
+import { ComponentToggleService } from '@siddhesh-savant-photography/shared';
+import { ToggleableComponent } from '@siddhesh-savant-photography/models';
 
 @Component({
   selector: 'app-page-not-found',
@@ -12,13 +13,21 @@ import { HeaderService } from '../header/services/header.service';
   styleUrl: './page-not-found.component.scss',
 })
 export class PageNotFoundComponent implements OnInit, OnDestroy {
-  constructor(private readonly headerService: HeaderService) {}
+  constructor(
+    private readonly componentToggleService: ComponentToggleService
+  ) {}
 
   ngOnInit(): void {
-    this.headerService.setShowHeader(false);
+    this.componentToggleService.setShowComponent(
+      ToggleableComponent.HEADER,
+      false
+    );
   }
 
   ngOnDestroy(): void {
-    this.headerService.setShowHeader(true);
+    this.componentToggleService.setShowComponent(
+      ToggleableComponent.HEADER,
+      true
+    );
   }
 }

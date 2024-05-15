@@ -7,10 +7,13 @@ import {
   CarouselType,
   IPhotoCarousel,
   PaginationType,
+  ToggleableComponent,
 } from '@siddhesh-savant-photography/models';
-import { PhotoCarouselComponent } from '@siddhesh-savant-photography/shared';
+import {
+  ComponentToggleService,
+  PhotoCarouselComponent,
+} from '@siddhesh-savant-photography/shared';
 import { MatButtonModule } from '@angular/material/button';
-import { HeaderService } from '../header/services/header.service';
 import { MatIconModule } from '@angular/material/icon';
 import { Observable, map } from 'rxjs';
 
@@ -29,16 +32,24 @@ import { Observable, map } from 'rxjs';
   styleUrl: './photo-collection.component.scss',
 })
 export class PhotoCollectionComponent implements OnInit, OnDestroy {
-  public photoCarousel$: Observable<IPhotoCarousel> = new Observable<IPhotoCarousel>();
+  public photoCarousel$: Observable<IPhotoCarousel> =
+    new Observable<IPhotoCarousel>();
 
   constructor(
     private readonly activatedRoute: ActivatedRoute,
-    private readonly headerService: HeaderService,
+    private readonly componentToggleService: ComponentToggleService,
     private readonly photoCollectionService: PhotoCollectionService
   ) {}
 
   ngOnInit(): void {
-    this.headerService.setShowHeader(false);
+    this.componentToggleService.setShowComponent(
+      ToggleableComponent.HEADER,
+      false
+    );
+    this.componentToggleService.setShowComponent(
+      ToggleableComponent.FOOTER,
+      false
+    );
     this.photoCarousel$ = this.activatedRoute.params.pipe(
       map((params) => {
         const collectionId: string = params['id'];
@@ -67,6 +78,13 @@ export class PhotoCollectionComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.headerService.setShowHeader(true);
+    this.componentToggleService.setShowComponent(
+      ToggleableComponent.HEADER,
+      true
+    );
+    this.componentToggleService.setShowComponent(
+      ToggleableComponent.FOOTER,
+      true
+    );
   }
 }

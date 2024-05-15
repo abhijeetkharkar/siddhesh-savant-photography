@@ -8,18 +8,20 @@ import {
   RouterLink,
   RouterLinkActive,
 } from '@angular/router';
-import { PhotoCarouselComponent } from '@siddhesh-savant-photography/shared';
+import {
+  ComponentToggleService,
+  PhotoCarouselComponent,
+  PhotoService,
+} from '@siddhesh-savant-photography/shared';
 import {
   IPhotoCarousel,
   CarouselType,
   CarouselControlPosition,
   PaginationType,
   IPhoto,
+  ToggleableComponent,
 } from '@siddhesh-savant-photography/models';
-import { EMPTY, Observable, catchError, map, of } from 'rxjs';
-import { HeaderService } from '../header/services/header.service';
-import { HomeService } from '../home/services/home.service';
-import { FooterService } from '../footer/services/footer.service';
+import { EMPTY, Observable, catchError, map } from 'rxjs';
 
 @Component({
   selector: 'app-photo-gallery',
@@ -41,19 +43,24 @@ export class PhotoGalleryComponent implements OnInit, OnDestroy {
 
   constructor(
     private readonly activatedRoute: ActivatedRoute,
-    private readonly headerService: HeaderService,
-    private readonly footerService: FooterService,
-    private readonly homeService: HomeService,
+    private readonly componentToggleService: ComponentToggleService,
+    private readonly photoService: PhotoService,
     private readonly router: Router
   ) {}
 
   ngOnInit(): void {
-    this.headerService.setShowHeader(false);
-    this.footerService.setShowFooter(false);
+    this.componentToggleService.setShowComponent(
+      ToggleableComponent.HEADER,
+      false
+    );
+    this.componentToggleService.setShowComponent(
+      ToggleableComponent.FOOTER,
+      false
+    );
     this.photoCarousel$ = this.activatedRoute.params.pipe(
       map((params) => {
         const photoId: string = params['id'];
-        const photoCards = this.homeService.getPhotoCardsV2();
+        const photoCards = this.photoService.getPhotoCardsV2();
         if (!photoCards.find((photoCard) => photoCard.photoId === photoId)) {
           throw new Error('Invalid PhotoId');
         }
@@ -93,6 +100,13 @@ export class PhotoGalleryComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.headerService.setShowHeader(true);
+    this.componentToggleService.setShowComponent(
+      ToggleableComponent.HEADER,
+      true
+    );
+    this.componentToggleService.setShowComponent(
+      ToggleableComponent.FOOTER,
+      true
+    );
   }
 }

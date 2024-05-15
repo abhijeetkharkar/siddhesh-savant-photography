@@ -8,7 +8,7 @@ import {
 @Injectable({
   providedIn: 'root',
 })
-export class HomeService {
+export class PhotoService {
   public getPhotoCardsV1() {
     return collections().map((collection, i) => {
       return {
