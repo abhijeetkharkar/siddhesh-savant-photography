@@ -24,8 +24,36 @@
   }
 }
 
+.imageContainer {
+  display: flex;
+
+  & img {
+    object-fit: contain;
+    max-width: 25rem;
+
+    @include mixins.BreakAt(breakpoints.$breakpoint-5) {
+      max-width: 20rem;
+    }
+
+    @include mixins.BreakAt(breakpoints.$breakpoint-8) {
+      max-width: 30rem;
+    }
+
+    @include mixins.BreakAt(breakpoints.$breakpoint-11) {
+      max-width: 40rem;
+    }
+  }
+}
+
 .content {
   display: flex;
   flex-direction: column;
-  row-gap: 4rem;
+  row-gap: 1rem;
+  max-width: 40rem;
+  text-align: left;
+
+  @include mixins.BreakAt(breakpoints.$breakpoint-5) {
+    row-gap: 4rem;
+    text-align: justify;
+  }
 }

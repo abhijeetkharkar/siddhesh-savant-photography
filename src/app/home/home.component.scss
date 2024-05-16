@@ -2,7 +2,7 @@
 @use '../../styles/base/breakpoints';
 
 :host {
-  margin: 2rem;
+  margin: 1rem;
   max-width: fit-content;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,7 @@
 
   @include mixins.BreakAt(breakpoints.$breakpoint-5) {
     flex-direction: row;
+    margin: 2rem;
   }
 }
 

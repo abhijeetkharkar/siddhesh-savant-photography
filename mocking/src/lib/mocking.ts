@@ -417,7 +417,7 @@ export const collections = () =>
 export const homeAndSpacesPhotos = () =>
   [
     {
-      id: '0',
+      id: '4bb67ce3-7229-46f8-8948-98be2c487f6c',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_1Q0A1610.jpg',
@@ -426,7 +426,7 @@ export const homeAndSpacesPhotos = () =>
       height: 853,
     },
     {
-      id: '1',
+      id: 'eb5e2763-7cad-4b2a-8d98-c6a768a25dfe',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_1Q0A1631.jpg',
@@ -435,7 +435,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '2',
+      id: '1d9d4d2f-2a3c-4cbb-80ba-56dd66e568a8',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_1Q0A1643.jpg',
@@ -444,7 +444,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '3',
+      id: 'c4843cf2-e4aa-46de-9b61-81f23df292f3',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_1Q0A1645.jpg',
@@ -453,7 +453,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '4',
+      id: '63e6f775-6695-415e-8f1b-7129dd579715',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_1Q0A1649.jpg',
@@ -462,7 +462,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '5',
+      id: '7ba30149-8fef-4938-86bb-2911e21996c4',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_1Q0A1653.jpg',
@@ -471,7 +471,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '6',
+      id: 'c097c748-5c9a-4612-82a4-62ecab6bb5e1',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_1Q0A1724.jpg',
@@ -480,7 +480,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '7',
+      id: '8931cef5-4037-4e8b-86c9-ae5ebf8e7e25',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_1Q0A1752.jpg',
@@ -489,7 +489,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '8',
+      id: 'af9f5df2-411b-419f-9208-c536814abc9e',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_1Q0A1778.jpg',
@@ -498,7 +498,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '9',
+      id: '190b31db-0327-43e9-a472-92ac7e9dcf1d',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_1Q0A1788.jpg',
@@ -507,7 +507,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '10',
+      id: 'cb190a63-ab78-416f-a65e-4681247d9085',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_1Q0A1808.jpg',
@@ -516,7 +516,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '11',
+      id: '0e9abb7a-5e1c-4335-a307-d4628cbd4429',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_MOIRA GOA0071.jpg',
@@ -525,7 +525,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '12',
+      id: '81beb520-b764-4c59-bdb2-0934099aff6c',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_MOIRA GOA0093.jpg',
@@ -534,7 +534,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '13',
+      id: 'dca1f201-fa06-4223-b616-10b4d8876e6b',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_MOIRA GOA0106.jpg',
@@ -543,7 +543,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '14',
+      id: '597baa87-5864-4bb6-9fe6-f780f2fc08f3',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_MOIRA GOA0112.jpg',
@@ -552,7 +552,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '15',
+      id: 'c8e81909-11ad-43a9-aaa0-9f681a267b92',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_MOIRA GOA0123.jpg',
@@ -561,7 +561,7 @@ export const homeAndSpacesPhotos = () =>
       height: 853,
     },
     {
-      id: '16',
+      id: '8c4cf747-eeb4-40f4-b7a3-1ceb1645d853',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_MOIRA GOA0159.jpg',
@@ -570,7 +570,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '17',
+      id: '0ab84b6d-81a5-47a9-a378-d90bab2f72a5',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_MOIRA GOA0167.jpg',
@@ -579,7 +579,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '18',
+      id: 'c0a0760b-8439-4274-a709-e8741892a91a',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_MOIRA GOA0177.jpg',
@@ -588,7 +588,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '19',
+      id: 'bce71de8-f7c4-4f26-9404-4aaa60ea3b28',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_MOIRA GOA0183.jpg',
@@ -597,7 +597,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '20',
+      id: 'db4abee7-8929-4c4a-b86c-70007c573dbd',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/01_MOIRA_GOA_MOIRA GOA0192.jpg',
@@ -606,7 +606,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '21',
+      id: '5dcea8e3-5d82-46e7-9f9b-4c9981e372a8',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4345.jpg',
@@ -615,7 +615,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '22',
+      id: '68ccd11a-ca3d-453c-b7ab-e07a9ca2b29c',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4362.jpg',
@@ -624,7 +624,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '23',
+      id: 'e2676027-b6f6-459d-84ca-7d4afa39685e',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4366.jpg',
@@ -633,7 +633,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '24',
+      id: 'e533016e-fbce-4760-a32d-0d3123dcefc7',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4396.jpg',
@@ -642,7 +642,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '25',
+      id: '9e82f928-318f-495c-b50a-edecf78c2c85',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4410.jpg',
@@ -651,7 +651,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '26',
+      id: '93d0c3d8-1f54-43d8-9f08-919398b1950f',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4469.jpg',
@@ -660,7 +660,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '27',
+      id: '095fb86b-d828-4312-a568-ae29b19ee726',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4488.jpg',
@@ -669,7 +669,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '28',
+      id: '60627282-19d8-4439-a5ae-65f8cdf8b43c',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4495.jpg',
@@ -678,7 +678,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '29',
+      id: 'a9684649-7008-4239-95c3-6ed612d9e6fd',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4508.jpg',
@@ -687,7 +687,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '30',
+      id: '6fa26dac-b14c-49d6-bbd8-e0e4bb60c184',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4512.jpg',
@@ -696,7 +696,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '31',
+      id: '04abae14-e4c4-4fba-933a-b4c815e166db',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4521.jpg',
@@ -705,7 +705,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '32',
+      id: 'a6caf621-78f4-4553-bd8e-1f3651c861ca',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4531.jpg',
@@ -714,7 +714,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '33',
+      id: '1fca910e-7f2c-4f59-89af-d4ee05d8bbb8',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4534.jpg',
@@ -723,7 +723,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '34',
+      id: '9a87b5bf-a7e2-47a0-aa49-96581b7ce1c7',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4537.jpg',
@@ -732,7 +732,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '35',
+      id: '2fb2e801-f4b4-48da-93ef-76abc3e83088',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4893.jpg',
@@ -741,7 +741,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '36',
+      id: '8be3b9cb-3f6c-477d-b142-f18810141424',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/02_DAPOLI_IMG_4896.jpg',
@@ -750,7 +750,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '37',
+      id: 'f4738afb-3b3c-4236-9708-3f2769e2c0ae',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9746.jpg',
@@ -759,7 +759,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '38',
+      id: '663e211c-f88d-40fb-8674-6eee0a5d567f',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9749.jpg',
@@ -768,7 +768,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1266,
     },
     {
-      id: '39',
+      id: '24b54061-677c-4185-94be-267fb25422ed',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9765.jpg',
@@ -777,7 +777,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1266,
     },
     {
-      id: '40',
+      id: '07966b78-3322-4486-a988-723803ac9210',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9792.jpg',
@@ -786,7 +786,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '41',
+      id: 'e9305075-508e-418f-a816-8f8d45c8d1bc',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9804.jpg',
@@ -795,7 +795,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1266,
     },
     {
-      id: '42',
+      id: '76a9cd8f-1a77-4e19-b5e6-4af8e3bb3fbb',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9813.jpg',
@@ -804,7 +804,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '43',
+      id: '4dfed8ac-48d2-419c-9bac-df478906b18e',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9826.jpg',
@@ -813,7 +813,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1266,
     },
     {
-      id: '44',
+      id: '78a857cb-f995-4407-9300-a82bbf8f3bc2',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9828.jpg',
@@ -822,7 +822,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1266,
     },
     {
-      id: '45',
+      id: '5b40345e-62d7-4e43-85d2-0afe624ca619',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9839.jpg',
@@ -831,7 +831,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '46',
+      id: '31aaf1a3-3bdb-4f38-90d9-ac30e4c61217',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9855.jpg',
@@ -840,7 +840,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '47',
+      id: '863a30ff-d9fd-4a40-a1dd-9642c7ac6c8b',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9859.jpg',
@@ -849,7 +849,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1266,
     },
     {
-      id: '48',
+      id: 'c15e6a26-00d6-4ebe-bfca-55546f0036c1',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9863.jpg',
@@ -858,7 +858,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '49',
+      id: 'd394a2bf-f2c5-4ab8-8b7c-0faca59b638c',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9864.jpg',
@@ -867,7 +867,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '50',
+      id: '0fed1a91-c5c3-4c9b-b996-3060fb24b470',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9872.jpg',
@@ -876,7 +876,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1266,
     },
     {
-      id: '51',
+      id: '9be582e9-db26-43d3-9517-5433ad2aeb1d',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9875.jpg',
@@ -885,7 +885,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1266,
     },
     {
-      id: '52',
+      id: 'c98007d1-a242-4515-a5c5-c207bcd6eb00',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9877.jpg',
@@ -894,7 +894,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '53',
+      id: '56ae07eb-3903-4c6c-ae0d-ec64749202ad',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9890.jpg',
@@ -903,7 +903,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '54',
+      id: '6c33b317-1ec1-4180-a963-bc43e3011bac',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9895.jpg',
@@ -912,7 +912,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '55',
+      id: '9ea54015-d05d-407f-9cfb-8ef31ba2b2dc',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9899.jpg',
@@ -921,7 +921,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '56',
+      id: 'f275c507-38d5-403f-b4ea-bedb0308711d',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9900.jpg',
@@ -930,7 +930,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '57',
+      id: 'b9f8c5ce-dc44-452b-9ad5-7e749092cdc5',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9906.jpg',
@@ -939,7 +939,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '58',
+      id: '2e508240-622c-4384-a3c3-2edc6cd7f333',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9907.jpg',
@@ -948,7 +948,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '59',
+      id: '3a56f99f-24ce-41de-b564-cded85a3563c',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9909.jpg',
@@ -957,7 +957,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '60',
+      id: 'b5683f9c-1420-4fa5-9216-6fab45067ed9',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9910.jpg',
@@ -966,7 +966,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '61',
+      id: '58610ec4-ae2f-4720-bfab-3003c808f0c3',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9913.jpg',
@@ -975,7 +975,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '62',
+      id: '3d5bd032-872d-41a9-b351-7cf69368dd50',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9920.jpg',
@@ -984,7 +984,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '63',
+      id: '757e1254-b815-4289-89b0-01c63b2789df',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9923.jpg',
@@ -993,7 +993,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '64',
+      id: '9e89a6d6-1689-4893-9610-f507acaa958d',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9931.jpg',
@@ -1002,7 +1002,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '65',
+      id: 'a17f47e3-f078-440a-a51f-b1d9478fc4b5',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9934.jpg',
@@ -1011,7 +1011,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '66',
+      id: '100f0745-e26e-4bf0-b450-fee1b2f6ecdd',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9935.jpg',
@@ -1020,7 +1020,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '67',
+      id: '8d0af77d-da46-4fd6-8cb7-8784e5fe4169',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9937.jpg',
@@ -1029,7 +1029,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '68',
+      id: '7e808520-5f8b-45c0-8d16-91048af0cf5a',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/03_PRIAMAL_ARANYA_1Q0A9948.jpg',
@@ -1038,7 +1038,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '69',
+      id: '7acc31a5-43a3-4caf-b586-ef81191c913d',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_01-04-20238353.jpg',
@@ -1047,7 +1047,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '70',
+      id: 'dde7f60e-6179-479b-8aaa-a27cd72df3e2',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_01-04-20238355.jpg',
@@ -1056,7 +1056,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '71',
+      id: '7f230ea0-f02e-40b7-b27d-cd2d04047b12',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_01-04-20238364.jpg',
@@ -1065,7 +1065,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '73',
+      id: 'c79c9005-f154-4c88-a697-31a28fb9d1fa',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_01-04-20238371.jpg',
@@ -1074,7 +1074,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '74',
+      id: '491142ff-257c-4e1c-a6f2-3b94af9bfece',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_1Q0A0138.jpg',
@@ -1083,7 +1083,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '75',
+      id: '08326e06-4699-4677-a7db-c426bdcdab86',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_1Q0A0149.jpg',
@@ -1092,7 +1092,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '76',
+      id: 'e34166fe-db73-4aa4-a797-3b5f9a9e212f',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_1Q0A0166.jpg',
@@ -1101,7 +1101,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '77',
+      id: '502474e0-161a-4c1b-812c-cba28be38615',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_1Q0A1047.jpg',
@@ -1110,7 +1110,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '78',
+      id: 'f5225197-738a-495b-b679-68b8ec75480e',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_1Q0A1157.jpg',
@@ -1119,7 +1119,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '79',
+      id: 'dfa4a220-1330-4ece-aabb-4fe2f6ac9985',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_1Q0A1167.jpg',
@@ -1128,7 +1128,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '80',
+      id: 'b5ea6f6b-4ead-4815-87da-49f5dbe7cbb8',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_DEANNE_S House 27-04-230093.jpg',
@@ -1137,7 +1137,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '81',
+      id: '00aac680-76ec-490c-bf0f-ba97447d7904',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_DEANNE_S House 27-04-230113.jpg',
@@ -1146,7 +1146,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '82',
+      id: '5106d16a-79b3-4e24-bd7b-15e489eefae2',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_DEANNE_S House 27-04-230124.jpg',
@@ -1155,7 +1155,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '83',
+      id: 'b4d5ba61-02ac-4489-9416-b5e42abe8904',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_DEANNE_S House 27-04-230129.jpg',
@@ -1164,7 +1164,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '84',
+      id: '09eb08a3-7ba8-473e-beb4-9292bc43f90e',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/04_DEANNES_HOUSE_DEANNE_S House 27-04-230133.jpg',
@@ -1173,7 +1173,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '85',
+      id: 'ebe5c3aa-185d-4ce2-9093-c59b0f3560d9',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/05_PURNS_HOUSE_1Q0A3087.jpg',
@@ -1182,7 +1182,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '86',
+      id: '50e8945a-0337-46c9-ac01-12dd090fdfe9',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/05_PURNS_HOUSE_1Q0A3143.jpg',
@@ -1191,7 +1191,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '87',
+      id: '6c52b37f-c45a-4846-9dd9-9aa28e5f892b',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/05_PURNS_HOUSE_1Q0A3145.jpg',
@@ -1200,7 +1200,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '88',
+      id: '7b78f46a-7b28-44d4-bfcd-b57ae2ca1638',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/05_PURNS_HOUSE_1Q0A3196.jpg',
@@ -1209,7 +1209,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '89',
+      id: '5052f239-80af-4f86-a904-aaeef1409f8a',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/05_PURNS_HOUSE_1Q0A3208.jpg',
@@ -1218,7 +1218,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '90',
+      id: '155070c6-5906-4a0c-982e-49d2800dad1a',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/05_PURNS_HOUSE_1Q0A3215.jpg',
@@ -1227,7 +1227,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '91',
+      id: 'b551ed17-b74c-4df5-bd70-fecba2aa11cc',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/05_PURNS_HOUSE_1Q0A3236.jpg',
@@ -1236,7 +1236,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '92',
+      id: 'c8400b2e-65f6-4192-845f-e2736e4cbcc0',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/05_PURNS_HOUSE_1Q0A3242.jpg',
@@ -1245,7 +1245,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '93',
+      id: 'e14b9fa3-ec6c-4f0a-a204-6074e89e939f',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/05_PURNS_HOUSE_1Q0A3259.jpg',
@@ -1254,7 +1254,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '94',
+      id: '1acf4cc0-27fc-4f67-9aa7-cf4b3b170bb0',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/06_RAVISH_KAPOOR_OFF_IMG_7382.jpg',
@@ -1263,7 +1263,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '95',
+      id: '65ec2b9f-3709-4b4d-8d7e-d49b2fb40986',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/06_RAVISH_KAPOOR_OFF_IMG_7386.jpg',
@@ -1272,7 +1272,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '96',
+      id: '33f017df-34c9-4785-bcd8-e01f6c61e828',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/06_RAVISH_KAPOOR_OFF_IMG_7397.jpg',
@@ -1281,7 +1281,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '97',
+      id: '089047eb-8ef9-455c-86f9-01f9041a3529',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/06_RAVISH_KAPOOR_OFF_IMG_7408.jpg',
@@ -1290,7 +1290,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '98',
+      id: 'c03533bf-d481-44a7-80bf-945ea8ed4ad2',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/06_RAVISH_KAPOOR_OFF_IMG_7418.jpg',
@@ -1299,7 +1299,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '99',
+      id: '32747275-29f5-487c-b03e-014a531c478f',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/07_KARISHMA_HOME_1Q0A1904.jpg',
@@ -1308,7 +1308,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '100',
+      id: 'fb45bbe8-c655-485c-9995-d34d5775245b',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/07_KARISHMA_HOME_1Q0A1907.jpg',
@@ -1317,7 +1317,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '101',
+      id: '796995dc-79d2-43dd-a05c-8495f5917a13',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/07_KARISHMA_HOME_1Q0A1915.jpg',
@@ -1326,7 +1326,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '102',
+      id: 'de27966a-1410-492f-a2ac-25f9a8bf5f06',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/07_KARISHMA_HOME_1Q0A1923.jpg',
@@ -1335,7 +1335,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '103',
+      id: 'bf0cdd2b-134f-43e4-90d0-5b6835ce4475',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/07_KARISHMA_HOME_1Q0A1932.jpg',
@@ -1344,7 +1344,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '104',
+      id: 'aea0bafd-7f25-48d5-b6e9-f5fa39e92c96',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/07_KARISHMA_HOME_1Q0A1940.jpg',
@@ -1353,7 +1353,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '128',
+      id: 'bb544d17-fe30-4383-af59-a0503c1d0f9f',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6303.jpg',
@@ -1362,7 +1362,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1080,
     },
     {
-      id: '129',
+      id: '165be7d1-5050-4da9-a568-29c5edad7862',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6318.jpg',
@@ -1371,7 +1371,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1080,
     },
     {
-      id: '130',
+      id: '544a7470-40af-43ff-920a-067fbe641c30',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6348.jpg',
@@ -1380,7 +1380,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '131',
+      id: '0c22cac8-0e75-4c37-8d76-7a3bf5e08675',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6350.jpg',
@@ -1389,7 +1389,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '132',
+      id: '0ae91f30-1d51-40e3-b6c7-978f61bfccde',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6362.jpg',
@@ -1398,7 +1398,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1080,
     },
     {
-      id: '133',
+      id: '3cfce1ff-c033-4c1c-b404-08f8642f9096',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6379.jpg',
@@ -1407,7 +1407,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '134',
+      id: 'c1cec2b2-1a7f-42f4-84ab-b43043c6f4b1',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6380.jpg',
@@ -1416,7 +1416,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '135',
+      id: '8fc82f3d-da3c-4908-a493-0267b21ad40e',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6386.jpg',
@@ -1425,7 +1425,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '136',
+      id: 'd1f5d79a-a75f-486a-9681-4b22c2df5bf5',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6389.jpg',
@@ -1434,7 +1434,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '137',
+      id: '139dd688-10c2-46c1-9dc1-2089d263bbc2',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6391.jpg',
@@ -1443,7 +1443,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1080,
     },
     {
-      id: '138',
+      id: 'bbbd8bd2-a20d-4aab-ab32-cfd93b321364',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6411.jpg',
@@ -1452,7 +1452,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1080,
     },
     {
-      id: '139',
+      id: '7845d246-8eec-4c2c-a177-4bd9251b523f',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6419.jpg',
@@ -1461,7 +1461,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '140',
+      id: 'f1b5e087-3707-422c-8b1f-92e75815d2fe',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6428.jpg',
@@ -1470,7 +1470,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1080,
     },
     {
-      id: '141',
+      id: '579f341d-25e7-4aaf-936b-a2b24b2f571d',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6437.jpg',
@@ -1479,7 +1479,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1080,
     },
     {
-      id: '142',
+      id: '46655ee7-30fc-43d2-b8ba-02211fdd3082',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/09_RITAKSHI_HOUSE_IMG_6485.jpg',
@@ -1488,7 +1488,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1080,
     },
     {
-      id: '143',
+      id: '7ada6bd1-cfdf-47de-984d-5da4a155bd27',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/10_RITAKSHI_OFFICE_IMG_6504.jpg',
@@ -1497,7 +1497,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '144',
+      id: '1b465aa3-7015-4245-8df9-a9e3f3c028ac',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/10_RITAKSHI_OFFICE_IMG_6509.jpg',
@@ -1506,7 +1506,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '145',
+      id: 'cfea037f-c13a-4b46-a362-125d4313c107',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/10_RITAKSHI_OFFICE_IMG_6514.jpg',
@@ -1515,7 +1515,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '146',
+      id: '2f19498f-ddfb-45c0-879d-57949f93473e',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/10_RITAKSHI_OFFICE_IMG_6593.jpg',
@@ -1524,7 +1524,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '147',
+      id: 'a172940f-d8f8-4a41-b75b-e4392ad726d6',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/10_RITAKSHI_OFFICE_IMG_6599.jpg',
@@ -1533,7 +1533,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '148',
+      id: '2000c05e-a26a-48aa-9189-fd64ed9607c3',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/10_RITAKSHI_OFFICE_IMG_6605.jpg',
@@ -1542,7 +1542,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '149',
+      id: 'c9c14327-f60a-44f9-b69c-b4897922ef21',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/10_RITAKSHI_OFFICE_IMG_6606.jpg',
@@ -1551,7 +1551,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '150',
+      id: '2cdcb00f-1c15-4793-9f7e-0f780ac976b4',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/11_SHONA_NATH_IMG_6835.jpg',
@@ -1560,7 +1560,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '151',
+      id: 'a210687c-14a5-4e2b-be99-59d8006f007d',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/11_SHONA_NATH_IMG_6856.jpg',
@@ -1569,7 +1569,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '152',
+      id: '393c8fdc-453a-452e-8773-ee530b47ef6e',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/11_SHONA_NATH_IMG_6860.jpg',
@@ -1578,7 +1578,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '153',
+      id: 'f9ded6ef-d784-41b2-80d6-c0dea45a767e',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/11_SHONA_NATH_IMG_6865.jpg',
@@ -1587,7 +1587,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '154',
+      id: 'c9be35de-bd09-4ddd-aeb0-b3c515b801b7',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/12_TANUJA_IMG_0216.jpg',
@@ -1596,7 +1596,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '155',
+      id: '3537b8a7-9b0c-4d99-81a4-444062de76a9',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/12_TANUJA_IMG_0250.jpg',
@@ -1605,7 +1605,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '156',
+      id: '9051fb18-39a4-4a7d-9199-41bb1c560c68',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/12_TANUJA_IMG_0262.jpg',
@@ -1614,7 +1614,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '157',
+      id: 'ad58712d-d8a3-4da6-a437-e8ebb6d34d48',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/12_TANUJA_IMG_0289.jpg',
@@ -1623,7 +1623,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '158',
+      id: '4a1d935d-82f9-483c-836d-73b8a9be91fc',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/13_VILLA_MARIA_IMG_9534.jpg',
@@ -1632,7 +1632,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1266,
     },
     {
-      id: '159',
+      id: 'e2a7b181-50f0-4370-907b-45a8f54950b0',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/13_VILLA_MARIA_IMG_9539.jpg',
@@ -1641,7 +1641,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '160',
+      id: 'e0a37ca7-e62f-47f1-a051-e196e75aa127',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/13_VILLA_MARIA_IMG_9556.jpg',
@@ -1650,7 +1650,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '161',
+      id: 'e790fbff-bd08-48d2-a9a6-50eec4329feb',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/13_VILLA_MARIA_IMG_9558.jpg',
@@ -1659,7 +1659,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '162',
+      id: '162b4719-fd19-45d0-909c-d5c7f149b7ff',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/13_VILLA_MARIA_IMG_9564.jpg',
@@ -1668,7 +1668,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '163',
+      id: 'f5bc7a38-936f-469b-8fb9-37fae9b0012c',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/13_VILLA_MARIA_IMG_9568.jpg',
@@ -1677,7 +1677,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '164',
+      id: 'd066adc1-d04d-4d5c-ac9e-4af006eb7e52',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/13_VILLA_MARIA_IMG_9647.jpg',
@@ -1686,7 +1686,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '165',
+      id: 'd9df8419-ae34-481e-af3b-fc3bd7e31d5a',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/13_VILLA_MARIA_IMG_9670.jpg',
@@ -1695,7 +1695,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '166',
+      id: '27264d00-e061-4109-9ffd-d4988483a72f',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/13_VILLA_MARIA_IMG_9671.jpg',
@@ -1704,7 +1704,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '167',
+      id: '35927645-4921-4b8c-8d70-d29f69e0797a',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/13_VILLA_MARIA_IMG_9672.jpg',
@@ -1713,7 +1713,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '168',
+      id: 'cf84ba81-7be2-45f3-81ee-df6628c504c1',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/13_VILLA_MARIA_IMG_9695.jpg',
@@ -1722,7 +1722,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '169',
+      id: '941b30ab-fe58-47bc-ab95-c2d7ca2d1b50',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6633.jpg',
@@ -1731,7 +1731,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '170',
+      id: 'ea5ff66a-4697-44b6-a52e-5d2cedc21f48',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6641.jpg',
@@ -1740,7 +1740,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '171',
+      id: 'd15fd579-126d-4d6f-8f1b-aefbf844282f',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6668.jpg',
@@ -1749,7 +1749,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '172',
+      id: '5ac4ea89-5d09-4c90-8f61-62a3fb80e598',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6683.jpg',
@@ -1758,7 +1758,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '173',
+      id: '32dd9c72-6fbe-43b8-9dff-eec59c4d59bf',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6684.jpg',
@@ -1767,7 +1767,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '174',
+      id: '893e2c90-0a7c-477d-8a11-b38d12d69d41',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6690.jpg',
@@ -1776,7 +1776,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '175',
+      id: '4e224971-267b-4c06-a73c-9ce7748610b1',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6698.jpg',
@@ -1785,7 +1785,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '176',
+      id: '07b4753a-f0fd-498b-b08a-c3a182dea7c8',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6701.jpg',
@@ -1794,7 +1794,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '177',
+      id: '6d0b6b23-ea6d-488c-846d-b7b01cb6fd6b',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6703.jpg',
@@ -1803,7 +1803,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '178',
+      id: '3627a824-9b08-48f1-b004-58c4cc91e918',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6706.jpg',
@@ -1812,7 +1812,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '179',
+      id: '5d1bf5f8-01dd-49e6-96e5-d14859804121',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6711.jpg',
@@ -1821,7 +1821,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1280,
     },
     {
-      id: '180',
+      id: 'b19ab62a-714e-461e-83ae-a7355fc24d27',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6715.jpg',
@@ -1830,7 +1830,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '181',
+      id: '40f755be-d5e6-416f-961e-5c8b946b3bbf',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6716.jpg',
@@ -1839,7 +1839,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '182',
+      id: 'fd645925-713c-42da-8ac2-f711a326d0b6',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6723.jpg',
@@ -1848,7 +1848,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '183',
+      id: 'a94280e7-1034-4ce2-baf6-81e158a51688',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6727.jpg',
@@ -1857,7 +1857,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '184',
+      id: '96607f4f-37eb-48da-8737-f91b2a9a08c6',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6732.jpg',
@@ -1866,7 +1866,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1263,
     },
     {
-      id: '185',
+      id: 'f0ec42de-f15a-469c-85ab-25d7d53c1aa1',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6734.jpg',
@@ -1875,7 +1875,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1259,
     },
     {
-      id: '186',
+      id: 'e69b22ce-187c-4955-a78b-160405a7f39b',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6737.jpg',
@@ -1884,7 +1884,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '187',
+      id: 'bb809f6a-bd8d-4d32-a87e-dcd27de2ba21',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6741.jpg',
@@ -1893,7 +1893,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '188',
+      id: '0c54f3d4-ad45-4436-8cf0-13790fa0f736',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6756.jpg',
@@ -1902,7 +1902,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '189',
+      id: 'e1295aa6-34b8-4dd0-b816-da83eaacdf99',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6758.jpg',
@@ -1911,7 +1911,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '190',
+      id: 'de6a3b20-3804-4926-92f3-a55c13bf9643',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6760.jpg',
@@ -1920,7 +1920,7 @@ export const homeAndSpacesPhotos = () =>
       height: 1920,
     },
     {
-      id: '191',
+      id: '0b48c08e-ad29-47c1-9054-dae4e71e4cad',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/14_AMSTORIA_IMG_6765.jpg',
@@ -1933,7 +1933,97 @@ export const homeAndSpacesPhotos = () =>
 export const megaProjectsPhotos = () =>
   [
     {
-      id: '105',
+      id: '205288d7-65c8-4522-8ce5-06b735bfa2cd',
+      title: '',
+      description: '',
+      url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/15_ATAL_SETU_DJI_20231215165239_0013_D.jpg',
+      altText: '15_ATAL_SETU_DJI_20231215165239_0013_D.jpg',
+      width: 1920,
+      height: 1080,
+    },
+    {
+      id: '763dbb96-63fa-4ccc-b103-d5ca02d97e00',
+      title: '',
+      description: '',
+      url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/15_ATAL_SETU_DJI_20231215165658_0020_D.jpg',
+      altText: '15_ATAL_SETU_DJI_20231215165658_0020_D.jpg',
+      width: 1920,
+      height: 1080,
+    },
+    {
+      id: '7301b9c0-bf16-4212-948e-503598195a0f',
+      title: '',
+      description: '',
+      url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/15_ATAL_SETU_DJI_20231215170032_0026_D.jpg',
+      altText: '15_ATAL_SETU_DJI_20231215170032_0026_D.jpg',
+      width: 1920,
+      height: 1080,
+    },
+    {
+      id: '393a70af-d820-4dfc-a6b5-01b05ac688cd',
+      title: '',
+      description: '',
+      url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/15_ATAL_SETU_DJI_20231215171509_0031_D.jpg',
+      altText: '15_ATAL_SETU_DJI_20231215171509_0031_D.jpg',
+      width: 1920,
+      height: 1080,
+    },
+    {
+      id: '191af250-282e-42d8-8976-02a31019c6a1',
+      title: '',
+      description: '',
+      url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/15_ATAL_SETU_DJI_20231215174356_0058_D.jpg',
+      altText: '15_ATAL_SETU_DJI_20231215174356_0058_D.jpg',
+      width: 1920,
+      height: 1080,
+    },
+    {
+      id: '8d670851-46e7-4c1f-9ab2-7409668ed857',
+      title: '',
+      description: '',
+      url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/15_ATAL_SETU_DJI_20231216070841_0016_D.jpg',
+      altText: '15_ATAL_SETU_DJI_20231216070841_0016_D.jpg',
+      width: 1920,
+      height: 1080,
+    },
+    {
+      id: 'ebf0af40-1d4c-42cb-bff7-d7ca56b6f768',
+      title: '',
+      description: '',
+      url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/15_ATAL_SETU_DJI_20231216072228_0022_D.jpg',
+      altText: '15_ATAL_SETU_DJI_20231216072228_0022_D.jpg',
+      width: 1920,
+      height: 1080,
+    },
+    {
+      id: '6ef3e4e2-39ab-418c-a278-0c2805573ef9',
+      title: '',
+      description: '',
+      url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/15_ATAL_SETU_DJI_20231216083627_0082_D.jpg',
+      altText: '15_ATAL_SETU_DJI_20231216083627_0082_D.jpg',
+      width: 1920,
+      height: 1080,
+    },
+    {
+      id: 'f7c39be0-238c-49d9-bf87-f8e43b286c19',
+      title: '',
+      description: '',
+      url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/15_ATAL_SETU_DJI_20231216084009_0087_D -1.jpg',
+      altText: '15_ATAL_SETU_DJI_20231216084009_0087_D -1.jpg',
+      width: 1920,
+      height: 1080,
+    },
+    {
+      id: '5839ba8e-23ea-43e3-8dbc-29197e6a19e5',
+      title: '',
+      description: '',
+      url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/15_ATAL_SETU_DJI_20231216084619_0092_D.jpg',
+      altText: '15_ATAL_SETU_DJI_20231216084619_0092_D.jpg',
+      width: 1920,
+      height: 1080,
+    },
+    {
+      id: 'f86d61c3-3790-4113-9862-c59706996669',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_0051.jpg',
@@ -1942,7 +2032,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '106',
+      id: '412cb7c3-e554-4e38-a1e2-2135116e1cf7',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_0073.jpg',
@@ -1951,7 +2041,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '107',
+      id: '1ca5513b-6ff7-4dfe-8685-004dbd2b6839',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_0077.jpg',
@@ -1960,7 +2050,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '108',
+      id: 'c45a9695-e30c-4669-9094-e64ae582fe7a',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_0090.jpg',
@@ -1969,7 +2059,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '109',
+      id: 'afde37cb-7491-4686-90a4-ab6d66043d43',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_0094.jpg',
@@ -1978,7 +2068,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '110',
+      id: '42d3116a-aa7f-4295-b38f-5a3feafdea40',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_0103.jpg',
@@ -1987,7 +2077,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '111',
+      id: '4e4352ea-d793-4d7e-8f07-edc7dd974294',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_1613.jpg',
@@ -1996,7 +2086,7 @@ export const megaProjectsPhotos = () =>
       height: 1264,
     },
     {
-      id: '112',
+      id: '869f3693-020b-4360-8999-96f086afe7bd',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_1947.jpg',
@@ -2005,7 +2095,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '113',
+      id: '9a09842e-058b-4e1b-ac68-2ec04868903f',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_1951.jpg',
@@ -2014,7 +2104,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '114',
+      id: '7dbdf09f-d386-4ae4-9ff9-c58135156d03',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_1960.jpg',
@@ -2023,7 +2113,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '115',
+      id: '06a6ca2e-efb8-4ff9-95fc-5aae43274b7d',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_2206.jpg',
@@ -2032,7 +2122,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '116',
+      id: '299929fc-f314-4bda-b2ea-483aa6583275',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_2211.jpg',
@@ -2041,7 +2131,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '117',
+      id: 'f3a1b19a-2f76-4711-925b-a6898c6be63f',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_3715.jpg',
@@ -2050,7 +2140,7 @@ export const megaProjectsPhotos = () =>
       height: 1263,
     },
     {
-      id: '118',
+      id: 'c47bc29f-da20-4890-984e-6ff306e6a4ed',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_4062.jpg',
@@ -2059,7 +2149,7 @@ export const megaProjectsPhotos = () =>
       height: 1279,
     },
     {
-      id: '119',
+      id: '7054c950-fc61-4426-bf7c-2950d65016c1',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_4247.jpg',
@@ -2068,7 +2158,7 @@ export const megaProjectsPhotos = () =>
       height: 1264,
     },
     {
-      id: '120',
+      id: '222e3836-dce0-4325-941b-bb59cdb9bfdd',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_4567.jpg',
@@ -2077,7 +2167,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '121',
+      id: 'f315e00d-3aba-4fdd-8c39-ce2a3dec6eaf',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_5826.jpg',
@@ -2086,7 +2176,7 @@ export const megaProjectsPhotos = () =>
       height: 1835,
     },
     {
-      id: '122',
+      id: '758cf584-7dd8-4055-888b-e32e5d25ad7f',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_5990.jpg',
@@ -2095,7 +2185,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '123',
+      id: '27475679-1da2-4e07-bee7-dda3fc16ccac',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_6020.jpg',
@@ -2104,7 +2194,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '124',
+      id: 'bcf424a0-49cd-4a19-8f24-4021d27713f6',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_6031.jpg',
@@ -2113,7 +2203,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '125',
+      id: '6659d599-ad29-4547-897b-b0c14afc3035',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_6702.jpg',
@@ -2122,7 +2212,7 @@ export const megaProjectsPhotos = () =>
       height: 1920,
     },
     {
-      id: '126',
+      id: '36424b6a-c442-47a8-810d-17e3b8d95e09',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_7389.jpg',
@@ -2131,7 +2221,7 @@ export const megaProjectsPhotos = () =>
       height: 1280,
     },
     {
-      id: '127',
+      id: '1018b9c9-1c8d-48c2-be8a-f019ea4eaad9',
       title: '',
       description: '',
       url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/08_MUMBAI_AIRPORT_IMG_9888.jpg',

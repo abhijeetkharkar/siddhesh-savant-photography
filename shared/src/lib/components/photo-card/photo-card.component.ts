@@ -26,9 +26,10 @@ export class PhotoCardComponent implements OnInit {
   @Input() photoCard!: IPhotoCard;
   @Input() totalColumns = 0;
   @Input() route = 'home';
-  private readonly TOTAL_HORIZONTAL_MARGIN = 64;
+  private readonly TOTAL_HORIZONTAL_MARGIN_WIDE_SCREEN = 64;  
+  private readonly TOTAL_HORIZONTAL_MARGIN_MOBILE = 32;
   private readonly ROW_GAP = 16;
-  private readonly EXTRA_REDUCTION_FACTOR = 0.012;
+  private readonly EXTRA_REDUCTION_FACTOR = 0.01;
   public showCard = false;
   public loading = true;
   public width = 0;
@@ -45,7 +46,9 @@ export class PhotoCardComponent implements OnInit {
 
   @HostListener('window:resize', ['$event.target.innerWidth'])
   onResize(screenWidth: number) {
+    let margin = this.TOTAL_HORIZONTAL_MARGIN_WIDE_SCREEN;
     if (screenWidth < Breakpoint.BREAKPOINT_5) {
+      margin = this.TOTAL_HORIZONTAL_MARGIN_MOBILE;
       this.backgroundWidth = Breakpoint.BREAKPOINT_4;
     } else if (screenWidth < Breakpoint.BREAKPOINT_8) {
       this.backgroundWidth = Breakpoint.BREAKPOINT_7;
@@ -56,7 +59,7 @@ export class PhotoCardComponent implements OnInit {
     }
     this.width =
       (screenWidth -
-        this.TOTAL_HORIZONTAL_MARGIN -
+        margin -
         (this.totalColumns - 1) * this.ROW_GAP -
         this.EXTRA_REDUCTION_FACTOR * screenWidth) /
       this.totalColumns;
