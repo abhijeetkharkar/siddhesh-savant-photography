@@ -33,7 +33,7 @@ export class PhotoCardComponent implements OnInit {
   private readonly TOTAL_HORIZONTAL_MARGIN_WIDE_SCREEN = 64;
   private readonly TOTAL_HORIZONTAL_MARGIN_MOBILE = 32;
   private readonly ROW_GAP = 16;
-  private readonly EXTRA_REDUCTION_FACTOR = 0.01;
+  private readonly EXTRA_REDUCTION_FACTOR = 0.011;
   public isPhotoCollectionCard = false;
   public id!: string;
   public showCard = false;
