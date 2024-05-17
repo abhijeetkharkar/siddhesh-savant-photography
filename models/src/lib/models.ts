@@ -17,9 +17,6 @@ export interface IPhotoCollectionCard extends Omit<IPhotoCard, 'photoId'> {
 
 export interface IPhotoCollection extends IPhotoCollectionCard {
   photos: IPhoto[];
-}
-
-export interface IPhotoCollectionItems extends IPhotoCollection {
   previous?: Pick<IPhotoCollectionCard, 'collectionId' | 'title'>;
   next?: Pick<IPhotoCollectionCard, 'collectionId' | 'title'>;
 }

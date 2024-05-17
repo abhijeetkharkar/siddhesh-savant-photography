@@ -1,9 +1,17 @@
 <mat-card
   *ngIf="showCard"
   class="photoCard"
-  (click)="openPhotos(photoCard.photoId)"
+  (click)="open()"
 >
-  <div *ngIf="loading" class="photoCard__skeleton" [ngStyle]="{'width': width, 'height': height, 'background-size': backgroundWidth + ' ' + backgroundHeight}">
+  <div
+    *ngIf="loading"
+    class="photoCard__skeleton"
+    [ngStyle]="{
+      width: width,
+      height: height,
+      'background-size': backgroundWidth + ' ' + backgroundHeight
+    }"
+  >
     <div class="photoCard__skeletonMask"></div>
   </div>
   <img

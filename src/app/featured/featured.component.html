@@ -1,0 +1,11 @@
+<div
+  *ngFor="let photoCollectionCardColumn of photoCollectionCardColumns"
+  class="photoCardColumn"
+>
+  <lib-photo-card
+    *ngFor="let photoCollectionCard of photoCollectionCardColumn"
+    [photoCard]="photoCollectionCard"
+    [totalColumns]="totalChunks"
+    [route]="route"
+  ></lib-photo-card>
+</div>

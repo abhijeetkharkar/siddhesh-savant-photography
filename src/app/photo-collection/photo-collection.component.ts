@@ -1,7 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
-import { PhotoCollectionService } from './services/photo-collection.service';
 import {
   CarouselControlPosition,
   CarouselType,
@@ -12,10 +11,11 @@ import {
 import {
   ComponentToggleService,
   PhotoCarouselComponent,
+  PhotoService,
 } from '@siddhesh-savant-photography/shared';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { Observable, map } from 'rxjs';
+import { Observable, combineLatest, map } from 'rxjs';
 
 @Component({
   selector: 'app-photo-collection',
@@ -34,11 +34,12 @@ import { Observable, map } from 'rxjs';
 export class PhotoCollectionComponent implements OnInit, OnDestroy {
   public photoCarousel$: Observable<IPhotoCarousel> =
     new Observable<IPhotoCarousel>();
+  public route = '';
 
   constructor(
     private readonly activatedRoute: ActivatedRoute,
     private readonly componentToggleService: ComponentToggleService,
-    private readonly photoCollectionService: PhotoCollectionService
+    private readonly photoService: PhotoService
   ) {}
 
   ngOnInit(): void {
@@ -50,16 +51,21 @@ export class PhotoCollectionComponent implements OnInit, OnDestroy {
       ToggleableComponent.FOOTER,
       false
     );
-    this.photoCarousel$ = this.activatedRoute.params.pipe(
-      map((params) => {
+    this.photoCarousel$ = combineLatest([
+      this.activatedRoute.params,
+      this.activatedRoute.queryParams,
+    ]).pipe(
+      map(([params, queryParams]) => {
         const collectionId: string = params['id'];
-        const collectionItems =
-          this.photoCollectionService.getPhotoCollectionItems(collectionId);
+        this.route = queryParams['route'];
+        const collection =
+          this.photoService.getFeaturedCollection(collectionId);
         return {
-          title: collectionItems?.title,
+          title: collection?.title,
           type: CarouselType.LOOP,
           timerInterval: 3000,
-          photos: collectionItems?.photos,
+          currentPhotoId: collection?.photos[0].id,
+          photos: collection?.photos,
           nextButton: {
             icon: '',
             text: '',
@@ -70,8 +76,8 @@ export class PhotoCollectionComponent implements OnInit, OnDestroy {
           },
           carouselControlsPosition: CarouselControlPosition.DEFAULT,
           paginationType: PaginationType.PAGE_NUMBER_TOTAL,
-          previousCollection: collectionItems?.previous,
-          nextCollection: collectionItems?.next,
+          previousCollection: collection?.previous,
+          nextCollection: collection?.next,
         } as IPhotoCarousel;
       })
     );

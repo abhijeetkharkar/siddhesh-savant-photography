@@ -1,0 +1,23 @@
+@use '../../styles/tools/mixins';
+@use '../../styles/base/breakpoints';
+
+:host {
+  margin: 1rem;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 1rem;
+
+  @include mixins.BreakAt(breakpoints.$breakpoint-5) {
+    flex-direction: row;
+    margin: 2rem;
+  }
+}
+
+.photoCardColumn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}

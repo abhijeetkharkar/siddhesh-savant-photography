@@ -68,10 +68,10 @@ export class PhotoGalleryComponent implements OnInit, OnDestroy {
         this.route = queryParams['route'];
         switch (this.route) {
           case '/mega-projects':
-            photoCards = this.photoService.getMegaProjectsPhotoCardsV2();
+            photoCards = this.photoService.getMegaProjectsPhotoCards();
             break;
           default:
-            photoCards = this.photoService.getHomeAndSpacesPhotoCardsV2();
+            photoCards = this.photoService.getHomeAndSpacesPhotoCards();
         }
         if (!photoCards.find((photoCard) => photoCard.photoId === photoId)) {
           throw new Error('Invalid PhotoId');

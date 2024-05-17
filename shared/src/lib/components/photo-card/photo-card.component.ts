@@ -1,7 +1,11 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
-import { Breakpoint, IPhotoCard } from '@siddhesh-savant-photography/models';
+import {
+  Breakpoint,
+  IPhotoCard,
+  IPhotoCollectionCard,
+} from '@siddhesh-savant-photography/models';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 export const IMG_WIDTH_LARGE_DESKTOP = 560;
@@ -23,13 +27,15 @@ export const IMG_WIDTH_MOBILE = 320;
   styleUrl: './photo-card.component.scss',
 })
 export class PhotoCardComponent implements OnInit {
-  @Input() photoCard!: IPhotoCard;
+  @Input() photoCard!: IPhotoCard | IPhotoCollectionCard;
   @Input() totalColumns = 0;
   @Input() route = 'home';
-  private readonly TOTAL_HORIZONTAL_MARGIN_WIDE_SCREEN = 64;  
+  private readonly TOTAL_HORIZONTAL_MARGIN_WIDE_SCREEN = 64;
   private readonly TOTAL_HORIZONTAL_MARGIN_MOBILE = 32;
   private readonly ROW_GAP = 16;
   private readonly EXTRA_REDUCTION_FACTOR = 0.01;
+  public isPhotoCollectionCard = false;
+  public id!: string;
   public showCard = false;
   public loading = true;
   public width = 0;
@@ -40,6 +46,16 @@ export class PhotoCardComponent implements OnInit {
   constructor(private readonly router: Router) {}
 
   ngOnInit(): void {
+    if ('photoId' in this.photoCard) {
+      this.isPhotoCollectionCard = false;
+      this.id = (this.photoCard as unknown as IPhotoCard).photoId;
+    } else {
+      this.isPhotoCollectionCard = true;
+      this.id = (
+        this.photoCard as unknown as IPhotoCollectionCard
+      ).collectionId;
+    }
+
     this.showCard = !!this.photoCard.thumbnailUrl;
     this.onResize(window.innerWidth);
   }
@@ -73,11 +89,23 @@ export class PhotoCardComponent implements OnInit {
     this.loading = false;
   }
 
-  public openCollection(collectionId: string) {
-    this.router.navigateByUrl(`/photo-collection/${collectionId}`);
+  public open() {
+    if (this.isPhotoCollectionCard) {
+      this.openCollection(this.id);
+    } else {
+      this.openPhotos(this.id);
+    }
   }
 
-  public openPhotos(photoId: string) {
-    this.router.navigate([`/photos/${photoId}`], {queryParams: {route: this.route}});
+  private openCollection(collectionId: string) {
+    this.router.navigate([`/photo-collection/${collectionId}`], {
+      queryParams: { route: this.route },
+    });
+  }
+
+  private openPhotos(photoId: string) {
+    this.router.navigate([`/photos/${photoId}`], {
+      queryParams: { route: this.route },
+    });
   }
 }
