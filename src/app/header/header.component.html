@@ -1,23 +1,24 @@
-<ng-container
-  *ngIf="showHeader$ | async"
->
+<ng-container *ngIf="showHeader$ | async">
   <mat-toolbar>
     <mat-toolbar-row class="header">
-      <a routerLink="home" class="header__title">
-        <span class="mb-0">SIDDHESH SAVANT PHOTOGRAPHY</span>
-      </a>
+      <div class="header__branding">
+        <img class="header__logo" src="../../assets/images/SSP_logo.png" />
+        <a routerLink="home" class="header__title">
+          <span class="mb-0">SIDDHESH SAVANT PHOTOGRAPHY</span>
+        </a>
+      </div>
       <div class="header__navigation">
         <a mat-button routerLink="home"
-          ><span class="mat-subtitle-1">Home &amp; Spaces</span></a
+          ><span class="navItem rajdhani">Home &amp; Spaces</span></a
         >
         <a mat-button routerLink="mega-projects"
-          ><span class="mat-subtitle-1">Mega Projects</span></a
+          ><span class="navItem rajdhani">Mega Projects</span></a
         >
         <a mat-button routerLink="featured"
-          ><span class="mat-subtitle-1">Featured</span></a
+          ><span class="navItem rajdhani">Featured</span></a
         >
         <a mat-button routerLink="connect"
-          ><span class="mat-subtitle-1">Connect</span></a
+          ><span class="navItem rajdhani">Connect</span></a
         >
       </div>
     </mat-toolbar-row>

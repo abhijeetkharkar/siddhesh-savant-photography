@@ -23,6 +23,15 @@
     row-gap: unset;
   }
 
+  .header__branding {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__logo {
+    width: 4rem
+  }
+
   .header__title {
     text-decoration: none;
     color: unset;
@@ -38,20 +47,20 @@
       font-size: 20px;
       line-height: 32px;
       font-weight: 500;
-      text-shadow: silver 0.5px 0 0.5px;
-      font-family: SiddheshSavantPhotography;
+      //text-shadow: silver 0.5px 0 0.5px;
+      font-family: Rajdhani;
 
       @include mixins.BreakAt(breakpoints.$breakpoint-3) {
         font-size: 24px;
         line-height: 32px;
       }
-      
+
       @include mixins.BreakAt(breakpoints.$breakpoint-5) {
         font-size: 30px;
         line-height: 36px;
         text-shadow: silver 0.75px 0 0.75px;
       }
-      
+
       @include mixins.BreakAt(breakpoints.$breakpoint-8) {
         font-size: 34px;
         line-height: 40px;
@@ -59,14 +68,14 @@
       }
 
       &:hover {
-        text-shadow: darkgrey 1px 0 1px;
+        text-shadow: darkgrey 0.5px 0 0.5px;
 
         @include mixins.BreakAt(breakpoints.$breakpoint-5) {
-          text-shadow: darkgrey 1.5px 0 1.5px;
+          text-shadow: darkgrey 1px 0 1px;
         }
 
         @include mixins.BreakAt(breakpoints.$breakpoint-8) {
-          text-shadow: darkgrey 2px 0 2px;
+          text-shadow: darkgrey 1.5px 0 1.5px;
         }
       }
     }
@@ -92,5 +101,22 @@
       column-gap: 2rem;
       justify-content: space-between;
     }
+  }
+}
+
+.navItem {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+
+  @include mixins.BreakAt(breakpoints.$breakpoint-5) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @include mixins.BreakAt(breakpoints.$breakpoint-5) {
+    font-size: 20px;
+    line-height: 32px;
   }
 }

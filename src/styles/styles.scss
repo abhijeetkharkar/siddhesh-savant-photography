@@ -6,6 +6,16 @@
   src: url('../assets/fonts/TTChocolatesTrialDemiBold.otf');
 }
 
+@font-face {
+  font-family: Rajdhani;
+  src: url('../assets/fonts/Rajdhani-Regular.ttf');
+}
+
+@font-face {
+  font-family: RajdhaniLight;
+  src: url('../assets/fonts/Rajdhani-Light.ttf');
+}
+
 html,
 body {
   height: 100%;
@@ -29,4 +39,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .display--none {
   display: none;
+}
+
+.rajdhani {
+  font-family: Rajdhani;
+}
+
+.rajdhani--light {
+  font-family: RajdhaniLight;
 }
