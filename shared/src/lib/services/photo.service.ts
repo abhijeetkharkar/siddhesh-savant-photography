@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import {
-  featured,
-  homeAndSpacesPhotos,
-  megaProjectsPhotos,
+  featuredCollections,
+  homeAndSpacesCollections,
+  megaProjectsCollections,
 } from '@siddhesh-savant-photography/mocking';
 import {
   IPhotoCard,
@@ -14,59 +14,53 @@ import {
   providedIn: 'root',
 })
 export class PhotoService {
-  public getHomeAndSpacesPhotoCards() {
-    return homeAndSpacesPhotos().map((photo, i) => {
-      return {
-        collectionId: `${i}`,
-        photoId: photo.id,
-        thumbnailUrl: photo.url,
-        thumbnailAltText: photo.altText,
-        width: photo.width,
-        height: photo.height,
-      } as IPhotoCard;
-    });
-  }
-
-  public getHomeAndSpacesPhotoCardColumns(totalChunks: number): IPhotoCard[][] {
-    const photoCardColumns = this.chunkifyPhotoCards(
-      this.getHomeAndSpacesPhotoCards(),
-      totalChunks
-    ) as IPhotoCard[][];
-    this.prioritizePhotoCards(photoCardColumns);
-    return photoCardColumns;
-  }
-
-  public getMegaProjectsPhotoCards() {
-    return megaProjectsPhotos().map((photo, i) => {
-      return {
-        collectionId: `${i}`,
-        photoId: photo.id,
-        thumbnailUrl: photo.url,
-        thumbnailAltText: photo.altText,
-        width: photo.width,
-        height: photo.height,
-      } as IPhotoCard;
-    });
-  }
-
-  public getMegaProjectsPhotoCardColumns(totalChunks: number): IPhotoCard[][] {
-    const photoCardColumns = this.chunkifyPhotoCards(
-      this.getMegaProjectsPhotoCards(),
-      totalChunks
-    ) as IPhotoCard[][];
-    this.prioritizePhotoCards(photoCardColumns);
-    return photoCardColumns;
-  }
-
-  public getFeaturedCollection(
+  public getHomeAndSpacesCollections(
     collectionId: string
   ): IPhotoCollection | undefined {
-    return featured().find(
+    return homeAndSpacesCollections().find(
       (collection) => collection.collectionId === collectionId
     );
   }
 
-  public getFeaturedCollectionCardColumns(
+  public getHomeAndSpacesCollectionsCardColumns(
+    totalChunks: number
+  ): IPhotoCollectionCard[][] {
+    const photoCollectionCardColumns = this.chunkifyPhotoCollectionCards(
+      this.getHomeAndSpacesCollectionCards(),
+      totalChunks
+    ) as IPhotoCollectionCard[][];
+    this.prioritizePhotoCollectionCards(photoCollectionCardColumns);
+    return photoCollectionCardColumns;
+  }
+
+  public getMegaProjectsCollections(
+    collectionId: string
+  ): IPhotoCollection | undefined {
+    return megaProjectsCollections().find(
+      (collection) => collection.collectionId === collectionId
+    );
+  }
+
+  public getMegaProjectsCollectionsCardColumns(
+    totalChunks: number
+  ): IPhotoCollectionCard[][] {
+    const photoCollectionCardColumns = this.chunkifyPhotoCollectionCards(
+      this.getMegaProjectsCollectionCards(),
+      totalChunks
+    ) as IPhotoCollectionCard[][];
+    this.prioritizePhotoCollectionCards(photoCollectionCardColumns);
+    return photoCollectionCardColumns;
+  }
+
+  public getFeaturedCollections(
+    collectionId: string
+  ): IPhotoCollection | undefined {
+    return featuredCollections().find(
+      (collection) => collection.collectionId === collectionId
+    );
+  }
+
+  public getFeaturedCollectionsCardColumns(
     totalChunks: number
   ): IPhotoCollectionCard[][] {
     const photoCollectionCardColumns = this.chunkifyPhotoCollectionCards(
@@ -77,8 +71,36 @@ export class PhotoService {
     return photoCollectionCardColumns;
   }
 
+  private getHomeAndSpacesCollectionCards() {
+    return homeAndSpacesCollections().map((collection) => {
+      return {
+        collectionId: collection.collectionId,
+        thumbnailUrl: collection.thumbnailUrl,
+        thumbnailAltText: collection.thumbnailAltText,
+        title: collection.title,
+        description: collection.description,
+        height: collection.height,
+        width: collection.width,
+      } as IPhotoCollectionCard;
+    });
+  }
+
+  private getMegaProjectsCollectionCards() {
+    return megaProjectsCollections().map((collection) => {
+      return {
+        collectionId: collection.collectionId,
+        thumbnailUrl: collection.thumbnailUrl,
+        thumbnailAltText: collection.thumbnailAltText,
+        title: collection.title,
+        description: collection.description,
+        height: collection.height,
+        width: collection.width,
+      } as IPhotoCollectionCard;
+    });
+  }
+
   private getFeaturedCollectionCards() {
-    return featured().map((collection) => {
+    return featuredCollections().map((collection) => {
       return {
         collectionId: collection.collectionId,
         thumbnailUrl: collection.thumbnailUrl,

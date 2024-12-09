@@ -1,3 +1,3 @@
-export * from './lib/featured.collection';
-export * from './lib/homes-spaces.photos';
-export * from './lib/mega-projects.photos';
+export * from './lib/featured.collections';
+export * from './lib/homes-spaces.collections';
+export * from './lib/mega-projects.collections';

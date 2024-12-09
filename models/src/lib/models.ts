@@ -17,8 +17,8 @@ export interface IPhotoCollectionCard extends Omit<IPhotoCard, 'photoId'> {
 
 export interface IPhotoCollection extends IPhotoCollectionCard {
   photos: IPhoto[];
-  previous?: Pick<IPhotoCollectionCard, 'collectionId' | 'title'>;
-  next?: Pick<IPhotoCollectionCard, 'collectionId' | 'title'>;
+  previous?: Pick<IPhotoCollectionCard, 'collectionId' | 'title'> | null;
+  next?: Pick<IPhotoCollectionCard, 'collectionId' | 'title'> | null;
 }
 
 export interface IPhotoCarousel {

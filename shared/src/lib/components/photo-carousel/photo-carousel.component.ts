@@ -36,6 +36,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class PhotoCarouselComponent implements OnChanges, OnDestroy {
   @Input() photoCarousel!: IPhotoCarousel | null;
+  @Input() route!: string;
   public showCarousel = false;
   public filteredPhotos: IPhoto[] = [];
   public currentIndex = 0;

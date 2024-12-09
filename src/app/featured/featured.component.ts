@@ -23,7 +23,7 @@ export class FeaturedComponent implements OnInit {
 
   ngOnInit(): void {
     this.onResize(window.innerWidth);
-    this.photoCollectionCardColumns = this.photoService.getFeaturedCollectionCardColumns(
+    this.photoCollectionCardColumns = this.photoService.getFeaturedCollectionsCardColumns(
       this.totalChunks
     );
     this.route = this.router.url;

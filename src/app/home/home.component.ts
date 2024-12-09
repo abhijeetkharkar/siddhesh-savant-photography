@@ -4,7 +4,7 @@ import {
   PhotoCardComponent,
   PhotoService,
 } from '@siddhesh-savant-photography/shared';
-import { Breakpoint, IPhotoCard } from '@siddhesh-savant-photography/models';
+import { Breakpoint, IPhotoCard, IPhotoCollectionCard } from '@siddhesh-savant-photography/models';
 import { Router } from '@angular/router';
 
 @Component({
@@ -15,7 +15,7 @@ import { Router } from '@angular/router';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
-  public photoCardColumns!: IPhotoCard[][];
+  public photoCollectionCardColumns!: IPhotoCollectionCard[][];
   public totalChunks: number = 1;
   public route = '';
 
@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.onResize(window.innerWidth);
-    this.photoCardColumns = this.photoService.getHomeAndSpacesPhotoCardColumns(
+    this.photoCollectionCardColumns = this.photoService.getHomeAndSpacesCollectionsCardColumns(
       this.totalChunks
     );
     this.route = this.router.url;

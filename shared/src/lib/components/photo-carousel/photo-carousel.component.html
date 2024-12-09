@@ -28,6 +28,7 @@
       [class.display--none]="!previousCollection"
       [disabled]="!previousCollection"
       [routerLink]="'/photo-collection/' + previousCollection?.collectionId"
+      [queryParams]="{route:route}"
       title="Previous Collection"
       ><mat-icon *ngIf="previousCollection">navigate_before</mat-icon
       >{{ previousCollection?.title }}</a
@@ -58,6 +59,7 @@
       [class.display--none]="!nextCollection"
       [disabled]="!nextCollection"
       [routerLink]="'/photo-collection/' + nextCollection?.collectionId"
+      [queryParams]="{route:route}"
       title="Next Collection"
       ><mat-icon *ngIf="nextCollection" iconPositionEnd>navigate_next</mat-icon
       >{{ nextCollection?.title }}</a

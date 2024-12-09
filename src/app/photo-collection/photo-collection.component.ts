@@ -58,8 +58,20 @@ export class PhotoCollectionComponent implements OnInit, OnDestroy {
       map(([params, queryParams]) => {
         const collectionId: string = params['id'];
         this.route = queryParams['route'];
-        const collection =
-          this.photoService.getFeaturedCollection(collectionId);
+        let collection;
+        switch(this.route) {
+          case '/home':
+            collection = this.photoService.getHomeAndSpacesCollections(collectionId);
+            break;
+          case '/mega-projects':
+            collection = this.photoService.getMegaProjectsCollections(collectionId);
+            break;
+          case '/featured':
+            collection = this.photoService.getFeaturedCollections(collectionId);
+            break;
+          default:
+            collection = this.photoService.getHomeAndSpacesCollections(collectionId);
+        }
         return {
           title: collection?.title,
           type: CarouselType.LOOP,

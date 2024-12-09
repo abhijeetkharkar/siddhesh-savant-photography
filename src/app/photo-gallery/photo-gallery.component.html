@@ -1,9 +1,0 @@
-<ng-container *ngIf="photoCarousel$ | async as photoCarousel">
-  <div class="galleryHeader">
-    <a mat-button class="galleryHeader__back" [routerLink]="route"
-      ><mat-icon>arrow_back</mat-icon>Back</a
-    >
-    <h3 class="galleryHeader__title">{{ photoCarousel.title }}</h3>
-  </div>
-  <lib-photo-carousel [photoCarousel]="photoCarousel"></lib-photo-carousel>
-</ng-container>
