@@ -5,6 +5,7 @@ import { ConnectComponent } from './connect/connect.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AuthModule } from '@auth0/auth0-angular';
 
 @Component({
   standalone: true,
@@ -15,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
     ConnectComponent,
     PageNotFoundComponent,
     FooterComponent,
+    AuthModule,
   ],
   selector: 'app-root',
   templateUrl: './app.component.html',

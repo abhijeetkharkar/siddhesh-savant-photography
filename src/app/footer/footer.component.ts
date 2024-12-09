@@ -13,11 +13,18 @@ import {
 import { ComponentToggleService } from '@siddhesh-savant-photography/shared';
 import { ToggleableComponent } from '@siddhesh-savant-photography/models';
 import { map } from 'rxjs';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule, FontAwesomeModule],
+  imports: [
+    CommonModule,
+    MatButtonModule,
+    MatIconModule,
+    FontAwesomeModule,
+    RouterLink,
+  ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })
@@ -33,7 +40,7 @@ export class FooterComponent {
       return componentToggleMap.get(ToggleableComponent.FOOTER);
     })
   );
-  
+
   constructor(
     private readonly componentToggleService: ComponentToggleService,
     private readonly faLibrary: FaIconLibrary
