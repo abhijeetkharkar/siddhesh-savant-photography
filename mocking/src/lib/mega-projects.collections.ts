@@ -4,7 +4,7 @@ export const megaProjectsCollections = () =>
   [
     {
       thumbnailUrl:
-        'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_COVER.jpg',
+        'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_COVER.jpg',
       thumbnailAltText: 'Atal_Setu_COVER.jpg',
       description: 'Nhava Sheva',
       eager: false,
@@ -15,7 +15,7 @@ export const megaProjectsCollections = () =>
           id: '0',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_COVER.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_COVER.jpg',
           altText: 'Atal_Setu_COVER.jpg',
           width: 1920,
           height: 1080,
@@ -24,7 +24,7 @@ export const megaProjectsCollections = () =>
           id: '1',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231215165239_0013_D.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231215165239_0013_D.jpg',
           altText: 'Atal_Setu_DJI_20231215165239_0013_D.jpg',
           width: 1920,
           height: 1080,
@@ -33,7 +33,7 @@ export const megaProjectsCollections = () =>
           id: '2',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231215165658_0020_D.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231215165658_0020_D.jpg',
           altText: 'Atal_Setu_DJI_20231215165658_0020_D.jpg',
           width: 1920,
           height: 1080,
@@ -42,7 +42,7 @@ export const megaProjectsCollections = () =>
           id: '3',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231215171509_0031_D.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231215171509_0031_D.jpg',
           altText: 'Atal_Setu_DJI_20231215171509_0031_D.jpg',
           width: 1920,
           height: 1080,
@@ -51,7 +51,7 @@ export const megaProjectsCollections = () =>
           id: '4',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231215174356_0058_D.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231215174356_0058_D.jpg',
           altText: 'Atal_Setu_DJI_20231215174356_0058_D.jpg',
           width: 1920,
           height: 1080,
@@ -60,7 +60,7 @@ export const megaProjectsCollections = () =>
           id: '5',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231216070841_0016_D.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231216070841_0016_D.jpg',
           altText: 'Atal_Setu_DJI_20231216070841_0016_D.jpg',
           width: 1920,
           height: 1080,
@@ -69,7 +69,7 @@ export const megaProjectsCollections = () =>
           id: '6',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231216072228_0022_D.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231216072228_0022_D.jpg',
           altText: 'Atal_Setu_DJI_20231216072228_0022_D.jpg',
           width: 1920,
           height: 1080,
@@ -78,7 +78,7 @@ export const megaProjectsCollections = () =>
           id: '7',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231216083627_0082_D.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231216083627_0082_D.jpg',
           altText: 'Atal_Setu_DJI_20231216083627_0082_D.jpg',
           width: 1920,
           height: 1080,
@@ -87,7 +87,7 @@ export const megaProjectsCollections = () =>
           id: '8',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231216084009_0087_D -1.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231216084009_0087_D -1.jpg',
           altText: 'Atal_Setu_DJI_20231216084009_0087_D -1.jpg',
           width: 1920,
           height: 1080,
@@ -96,7 +96,7 @@ export const megaProjectsCollections = () =>
           id: '9',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231216084619_0092_D.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Atal Setu__Nhava Sheva/Atal_Setu_DJI_20231216084619_0092_D.jpg',
           altText: 'Atal_Setu_DJI_20231216084619_0092_D.jpg',
           width: 1920,
           height: 1080,
@@ -115,7 +115,7 @@ export const megaProjectsCollections = () =>
     },
     {
       thumbnailUrl:
-        'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_COVER.jpg',
+        'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_COVER.jpg',
       thumbnailAltText:
         'Chhatrapati_Shivaji_Maharaj_International_Airport_COVER.jpg',
       description: 'Mumbai',
@@ -127,7 +127,7 @@ export const megaProjectsCollections = () =>
           id: '0',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_COVER.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_COVER.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_COVER.jpg',
           width: 1755,
@@ -137,7 +137,7 @@ export const megaProjectsCollections = () =>
           id: '1',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0051.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0051.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0051.jpg',
           width: 1900,
@@ -147,7 +147,7 @@ export const megaProjectsCollections = () =>
           id: '2',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0073.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0073.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0073.jpg',
           width: 1920,
@@ -157,7 +157,7 @@ export const megaProjectsCollections = () =>
           id: '3',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0077.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0077.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0077.jpg',
           width: 1920,
@@ -167,7 +167,7 @@ export const megaProjectsCollections = () =>
           id: '4',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0090.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0090.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0090.jpg',
           width: 1920,
@@ -177,7 +177,7 @@ export const megaProjectsCollections = () =>
           id: '5',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0094.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0094.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0094.jpg',
           width: 1920,
@@ -187,7 +187,7 @@ export const megaProjectsCollections = () =>
           id: '6',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0103.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0103.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_0103.jpg',
           width: 1920,
@@ -197,7 +197,7 @@ export const megaProjectsCollections = () =>
           id: '7',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_1613.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_1613.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_1613.jpg',
           width: 1920,
@@ -207,7 +207,7 @@ export const megaProjectsCollections = () =>
           id: '8',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_1947.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_1947.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_1947.jpg',
           width: 1920,
@@ -217,7 +217,7 @@ export const megaProjectsCollections = () =>
           id: '9',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_1951.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_1951.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_1951.jpg',
           width: 1920,
@@ -227,7 +227,7 @@ export const megaProjectsCollections = () =>
           id: '10',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_1960.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_1960.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_1960.jpg',
           width: 1920,
@@ -237,7 +237,7 @@ export const megaProjectsCollections = () =>
           id: '11',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_2206.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_2206.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_2206.jpg',
           width: 1920,
@@ -247,7 +247,7 @@ export const megaProjectsCollections = () =>
           id: '12',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_2211.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_2211.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_2211.jpg',
           width: 1920,
@@ -257,7 +257,7 @@ export const megaProjectsCollections = () =>
           id: '13',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_3715.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_3715.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_3715.jpg',
           width: 1920,
@@ -267,7 +267,7 @@ export const megaProjectsCollections = () =>
           id: '14',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_4062.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_4062.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_4062.jpg',
           width: 1920,
@@ -277,7 +277,7 @@ export const megaProjectsCollections = () =>
           id: '15',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_4247.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_4247.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_4247.jpg',
           width: 1920,
@@ -287,7 +287,7 @@ export const megaProjectsCollections = () =>
           id: '16',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_4567.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_4567.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_4567.jpg',
           width: 1920,
@@ -297,7 +297,7 @@ export const megaProjectsCollections = () =>
           id: '17',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_5826.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_5826.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_5826.jpg',
           width: 1280,
@@ -307,7 +307,7 @@ export const megaProjectsCollections = () =>
           id: '18',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_5990.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_5990.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_5990.jpg',
           width: 1920,
@@ -317,7 +317,7 @@ export const megaProjectsCollections = () =>
           id: '19',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_6020.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_6020.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_6020.jpg',
           width: 1920,
@@ -327,7 +327,7 @@ export const megaProjectsCollections = () =>
           id: '20',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_6031.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_6031.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_6031.jpg',
           width: 1920,
@@ -337,7 +337,7 @@ export const megaProjectsCollections = () =>
           id: '21',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_6702.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_6702.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_6702.jpg',
           width: 1280,
@@ -347,7 +347,7 @@ export const megaProjectsCollections = () =>
           id: '22',
           title: '',
           description: '',
-          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images1/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_7389.jpg',
+          url: 'https://s3.ap-south-1.amazonaws.com/siddheshsavantphotography.com/images/megaProjects/Chhatrapati Shivaji Maharaj International Airport__Mumbai/Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_7389.jpg',
           altText:
             'Chhatrapati_Shivaji_Maharaj_International_Airport_IMG_7389.jpg',
           width: 1920,
