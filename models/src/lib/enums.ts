@@ -41,3 +41,10 @@ export enum ToggleableComponent {
   HEADER,
   FOOTER,
 }
+
+export enum PhotoCategory {
+  HOMES_AND_SPACES = '/homesAndSpaces',
+  MEGA_PROJECTS = '/megaProjects',
+  FEATURED = '/featured',
+  HOME_DECOR = '/homeDecor',
+}

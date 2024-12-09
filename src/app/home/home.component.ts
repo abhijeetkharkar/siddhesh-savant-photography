@@ -4,8 +4,9 @@ import {
   PhotoCardComponent,
   PhotoService,
 } from '@siddhesh-savant-photography/shared';
-import { Breakpoint, IPhotoCard, IPhotoCollectionCard } from '@siddhesh-savant-photography/models';
+import { Breakpoint, IPhotoCollectionCard } from '@siddhesh-savant-photography/models';
 import { Router } from '@angular/router';
+import { homeAndSpacesCollections } from '@siddhesh-savant-photography/mocking';
 
 @Component({
   selector: 'app-home',
@@ -23,8 +24,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.onResize(window.innerWidth);
-    this.photoCollectionCardColumns = this.photoService.getHomeAndSpacesCollectionsCardColumns(
-      this.totalChunks
+    this.photoCollectionCardColumns = this.photoService.getCollectionsCardColumns(
+      this.totalChunks,
+      homeAndSpacesCollections()
     );
     this.route = this.router.url;
   }

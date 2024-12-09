@@ -6,6 +6,7 @@ import {
 } from '@siddhesh-savant-photography/shared';
 import { Breakpoint, IPhotoCard, IPhotoCollectionCard } from '@siddhesh-savant-photography/models';
 import { Router } from '@angular/router';
+import { megaProjectsCollections } from '@siddhesh-savant-photography/mocking';
 
 @Component({
   selector: 'app-mega-projects',
@@ -23,8 +24,9 @@ export class MegaProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     this.onResize(window.innerWidth);
-    this.photoCollectionCardColumns = this.photoService.getMegaProjectsCollectionsCardColumns(
-      this.totalChunks
+    this.photoCollectionCardColumns = this.photoService.getCollectionsCardColumns(
+      this.totalChunks,
+      megaProjectsCollections()
     );
     this.route = this.router.url;
   }

@@ -16,6 +16,7 @@ import {
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Observable, combineLatest, map } from 'rxjs';
+import { featuredCollections, homeAndSpacesCollections, megaProjectsCollections } from '@siddhesh-savant-photography/mocking';
 
 @Component({
   selector: 'app-photo-collection',
@@ -61,16 +62,16 @@ export class PhotoCollectionComponent implements OnInit, OnDestroy {
         let collection;
         switch(this.route) {
           case '/home':
-            collection = this.photoService.getHomeAndSpacesCollections(collectionId);
+            collection = this.photoService.getCollection(collectionId, homeAndSpacesCollections());
             break;
           case '/mega-projects':
-            collection = this.photoService.getMegaProjectsCollections(collectionId);
+            collection = this.photoService.getCollection(collectionId, megaProjectsCollections());
             break;
           case '/featured':
-            collection = this.photoService.getFeaturedCollections(collectionId);
+            collection = this.photoService.getCollection(collectionId, featuredCollections());
             break;
           default:
-            collection = this.photoService.getHomeAndSpacesCollections(collectionId);
+            collection = this.photoService.getCollection(collectionId, homeAndSpacesCollections());
         }
         return {
           title: collection?.title,

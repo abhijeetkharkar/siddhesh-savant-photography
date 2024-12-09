@@ -6,6 +6,7 @@ import {
 } from '@siddhesh-savant-photography/shared';
 import { Breakpoint, IPhotoCollectionCard } from '@siddhesh-savant-photography/models';
 import { Router } from '@angular/router';
+import { featuredCollections } from '@siddhesh-savant-photography/mocking';
 
 @Component({
   selector: 'app-featured',
@@ -23,8 +24,9 @@ export class FeaturedComponent implements OnInit {
 
   ngOnInit(): void {
     this.onResize(window.innerWidth);
-    this.photoCollectionCardColumns = this.photoService.getFeaturedCollectionsCardColumns(
-      this.totalChunks
+    this.photoCollectionCardColumns = this.photoService.getCollectionsCardColumns(
+      this.totalChunks,
+      featuredCollections()
     );
     this.route = this.router.url;
   }
